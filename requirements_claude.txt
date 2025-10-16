@@ -1,0 +1,12 @@
+# Claude API Integration Requirements
+# Install with: pip install -r requirements_claude.txt
+
+anthropic>=0.34.0
+requests>=2.31.0
+python-dotenv>=1.0.0
+
+# Optional for enhanced functionality
+pandas>=2.0.0
+numpy>=1.24.0
+pyodbc>=5.0.0  # For SQL Server connectivity if needed
+sqlalchemy>=2.0.0  # For database operations
