@@ -1,0 +1,683 @@
+{
+    "config": {
+        "version": "5.66",
+        "themeCollection": {
+            "baseTheme": {
+                "name": "CY24SU10",
+                "type": 2,
+                "version": {
+                    "visual": "1.8.95",
+                    "report": "2.0.95",
+                    "page": "1.3.95"
+                }
+            }
+        },
+        "activeSectionIndex": 1,
+        "modelExtensions": [
+            {
+                "name": "extension",
+                "entities": [
+                    {
+                        "name": "ev_names",
+                        "extends": "ev_names",
+                        "measures": [
+                            {
+                                "name": "total_cars",
+                                "dataType": 3,
+                                "expression": "DISTINCTCOUNT(ev_names[ev_name])",
+                                "errorMessage": null,
+                                "hidden": false,
+                                "formulaOverride": null,
+                                "formatInformation": {
+                                    "formatString": "G",
+                                    "format": "General",
+                                    "thousandSeparator": false,
+                                    "currencyFormat": null,
+                                    "dateTimeCustomFormat": null
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "defaultDrillFilterOtherVisuals": true,
+        "linguisticSchemaSyncVersion": 0,
+        "settings": {
+            "useNewFilterPaneExperience": true,
+            "allowChangeFilterTypes": true,
+            "useStylableVisualContainerHeader": true,
+            "queryLimitOption": 6,
+            "useEnhancedTooltips": true,
+            "exportDataMode": 1,
+            "useDefaultAggregateDisplayName": true
+        },
+        "objects": {
+            "section": [
+                {
+                    "properties": {
+                        "verticalAlignment": {
+                            "expr": {
+                                "Literal": {
+                                    "Value": "'Top'"
+                                }
+                            }
+                        }
+                    }
+                }
+            ],
+            "outspacePane": [
+                {
+                    "properties": {
+                        "expanded": {
+                            "expr": {
+                                "Literal": {
+                                    "Value": "true"
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "layoutOptimization": 0,
+    "resourcePackages": [
+        {
+            "resourcePackage": {
+                "disabled": false,
+                "items": [
+                    {
+                        "name": "CY24SU10",
+                        "path": "BaseThemes/CY24SU10.json",
+                        "type": 202
+                    }
+                ],
+                "name": "SharedResources",
+                "type": 2
+            }
+        }
+    ],
+    "sections": [
+        {
+            "config": {},
+            "displayName": "Page 1",
+            "displayOption": 1,
+            "filters": [
+                {
+                    "name": "580636757c5d8e6d13dc",
+                    "expression": {
+                        "Column": {
+                            "Expression": {
+                                "SourceRef": {
+                                    "Entity": "charging_data"
+                                }
+                            },
+                            "Property": "Charge Speed_Fast Charging"
+                        }
+                    },
+                    "filter": {
+                        "Version": 2,
+                        "From": [
+                            {
+                                "Name": "c",
+                                "Entity": "charging_data",
+                                "Type": 0
+                            }
+                        ],
+                        "Where": [
+                            {
+                                "Condition": {
+                                    "In": {
+                                        "Expressions": [
+                                            {
+                                                "Column": {
+                                                    "Expression": {
+                                                        "SourceRef": {
+                                                            "Source": "c"
+                                                        }
+                                                    },
+                                                    "Property": "Charge Speed_Fast Charging"
+                                                }
+                                            }
+                                        ],
+                                        "Values": [
+                                            [
+                                                {
+                                                    "Literal": {
+                                                        "Value": "'170 km/h'"
+                                                    }
+                                                }
+                                            ]
+                                        ]
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "type": "Categorical",
+                    "howCreated": 1,
+                    "objects": {}
+                }
+            ],
+            "height": 720.0,
+            "name": "70ee8cebe21232079804",
+            "visualContainers": [
+                {
+                    "config": {
+                        "name": "8ac4e84cba8b50b038d0",
+                        "layouts": [
+                            {
+                                "id": 0,
+                                "position": {
+                                    "x": 0,
+                                    "y": 0,
+                                    "z": 0,
+                                    "width": 476.40081799591,
+                                    "height": 552.3108384458078,
+                                    "tabOrder": 0
+                                }
+                            }
+                        ],
+                        "singleVisual": {
+                            "visualType": "tableEx",
+                            "projections": {
+                                "Values": [
+                                    {
+                                        "queryRef": "ev_names.ev_name"
+                                    },
+                                    {
+                                        "queryRef": "ev_names.ev_model"
+                                    }
+                                ]
+                            },
+                            "prototypeQuery": {
+                                "Version": 2,
+                                "From": [
+                                    {
+                                        "Name": "e",
+                                        "Entity": "ev_names",
+                                        "Type": 0
+                                    }
+                                ],
+                                "Select": [
+                                    {
+                                        "Column": {
+                                            "Expression": {
+                                                "SourceRef": {
+                                                    "Source": "e"
+                                                }
+                                            },
+                                            "Property": "ev_model"
+                                        },
+                                        "Name": "ev_names.ev_model",
+                                        "NativeReferenceName": "Model"
+                                    },
+                                    {
+                                        "Column": {
+                                            "Expression": {
+                                                "SourceRef": {
+                                                    "Source": "e"
+                                                }
+                                            },
+                                            "Property": "ev_name"
+                                        },
+                                        "Name": "ev_names.ev_name",
+                                        "NativeReferenceName": "Vehicle Name"
+                                    }
+                                ],
+                                "OrderBy": [
+                                    {
+                                        "Direction": 1,
+                                        "Expression": {
+                                            "Column": {
+                                                "Expression": {
+                                                    "SourceRef": {
+                                                        "Source": "e"
+                                                    }
+                                                },
+                                                "Property": "ev_name"
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "autoSelectVisualType": false,
+                            "columnProperties": {
+                                "ev_names.ev_name": {
+                                    "displayName": "Vehicle Name"
+                                },
+                                "ev_names.ev_model": {
+                                    "displayName": "Model"
+                                }
+                            },
+                            "drillFilterOtherVisuals": true
+                        }
+                    },
+                    "filters": [
+                        {
+                            "name": "4ccd1508a084354b30b1",
+                            "expression": {
+                                "Column": {
+                                    "Expression": {
+                                        "SourceRef": {
+                                            "Entity": "ev_names"
+                                        }
+                                    },
+                                    "Property": "ev_make"
+                                }
+                            },
+                            "filter": {
+                                "Version": 2,
+                                "From": [
+                                    {
+                                        "Name": "e",
+                                        "Entity": "ev_names",
+                                        "Type": 0
+                                    }
+                                ],
+                                "Where": [
+                                    {
+                                        "Condition": {
+                                            "In": {
+                                                "Expressions": [
+                                                    {
+                                                        "Column": {
+                                                            "Expression": {
+                                                                "SourceRef": {
+                                                                    "Source": "e"
+                                                                }
+                                                            },
+                                                            "Property": "ev_make"
+                                                        }
+                                                    }
+                                                ],
+                                                "Values": [
+                                                    [
+                                                        {
+                                                            "Literal": {
+                                                                "Value": "'Dacia'"
+                                                            }
+                                                        }
+                                                    ]
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "type": "Categorical",
+                            "howCreated": 1,
+                            "objects": {}
+                        }
+                    ],
+                    "height": 552.31,
+                    "width": 476.4,
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                {
+                    "config": {
+                        "name": "bf88d7567a2019011b35",
+                        "layouts": [
+                            {
+                                "id": 0,
+                                "position": {
+                                    "x": 476.40081799591,
+                                    "y": 270.92024539877303,
+                                    "z": 2000,
+                                    "width": 308.22085889570553,
+                                    "height": 157.70961145194275,
+                                    "tabOrder": 2000
+                                }
+                            }
+                        ],
+                        "singleVisual": {
+                            "visualType": "card",
+                            "projections": {
+                                "Values": [
+                                    {
+                                        "queryRef": "ev_names.total_cars"
+                                    }
+                                ]
+                            },
+                            "prototypeQuery": {
+                                "Version": 2,
+                                "From": [
+                                    {
+                                        "Name": "e",
+                                        "Entity": "ev_names",
+                                        "Schema": "extension",
+                                        "Type": 0
+                                    }
+                                ],
+                                "Select": [
+                                    {
+                                        "Measure": {
+                                            "Expression": {
+                                                "SourceRef": {
+                                                    "Source": "e"
+                                                }
+                                            },
+                                            "Property": "total_cars"
+                                        },
+                                        "Name": "ev_names.total_cars",
+                                        "NativeReferenceName": "total_cars"
+                                    }
+                                ],
+                                "OrderBy": [
+                                    {
+                                        "Direction": 2,
+                                        "Expression": {
+                                            "Measure": {
+                                                "Expression": {
+                                                    "SourceRef": {
+                                                        "Source": "e"
+                                                    }
+                                                },
+                                                "Property": "total_cars"
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "drillFilterOtherVisuals": true,
+                            "hasDefaultSort": true
+                        }
+                    },
+                    "filters": [],
+                    "height": 157.71,
+                    "width": 308.22,
+                    "x": 476.4,
+                    "y": 270.92,
+                    "z": 2000.0
+                },
+                {
+                    "config": {
+                        "name": "d9b11591be9a101800cc",
+                        "layouts": [
+                            {
+                                "id": 0,
+                                "position": {
+                                    "x": 476.40081799591,
+                                    "y": 0,
+                                    "z": 1000,
+                                    "width": 319.34560327198363,
+                                    "height": 265.6850715746421,
+                                    "tabOrder": 1000
+                                }
+                            }
+                        ],
+                        "singleVisual": {
+                            "visualType": "clusteredBarChart",
+                            "projections": {
+                                "Category": [
+                                    {
+                                        "queryRef": "ev_names.ev_make",
+                                        "active": true
+                                    }
+                                ],
+                                "Y": [
+                                    {
+                                        "queryRef": "ev_names.total_cars"
+                                    }
+                                ]
+                            },
+                            "prototypeQuery": {
+                                "Version": 2,
+                                "From": [
+                                    {
+                                        "Name": "e",
+                                        "Entity": "ev_names",
+                                        "Type": 0
+                                    },
+                                    {
+                                        "Name": "e1",
+                                        "Entity": "ev_names",
+                                        "Schema": "extension",
+                                        "Type": 0
+                                    }
+                                ],
+                                "Select": [
+                                    {
+                                        "Column": {
+                                            "Expression": {
+                                                "SourceRef": {
+                                                    "Source": "e"
+                                                }
+                                            },
+                                            "Property": "ev_make"
+                                        },
+                                        "Name": "ev_names.ev_make",
+                                        "NativeReferenceName": "ev_make"
+                                    },
+                                    {
+                                        "Measure": {
+                                            "Expression": {
+                                                "SourceRef": {
+                                                    "Source": "e1"
+                                                }
+                                            },
+                                            "Property": "total_cars"
+                                        },
+                                        "Name": "ev_names.total_cars",
+                                        "NativeReferenceName": "total_cars"
+                                    }
+                                ],
+                                "OrderBy": [
+                                    {
+                                        "Direction": 2,
+                                        "Expression": {
+                                            "Measure": {
+                                                "Expression": {
+                                                    "SourceRef": {
+                                                        "Source": "e1"
+                                                    }
+                                                },
+                                                "Property": "total_cars"
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "drillFilterOtherVisuals": true,
+                            "hasDefaultSort": true,
+                            "objects": {
+                                "labels": [
+                                    {
+                                        "properties": {
+                                            "show": {
+                                                "expr": {
+                                                    "Literal": {
+                                                        "Value": "true"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                ],
+                                "valueAxis": [
+                                    {
+                                        "properties": {
+                                            "showAxisTitle": {
+                                                "expr": {
+                                                    "Literal": {
+                                                        "Value": "false"
+                                                    }
+                                                }
+                                            },
+                                            "show": {
+                                                "expr": {
+                                                    "Literal": {
+                                                        "Value": "false"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                ],
+                                "categoryAxis": [
+                                    {
+                                        "properties": {
+                                            "showAxisTitle": {
+                                                "expr": {
+                                                    "Literal": {
+                                                        "Value": "false"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "filters": [],
+                    "height": 265.69,
+                    "width": 319.35,
+                    "x": 476.4,
+                    "y": 0.0,
+                    "z": 1000.0
+                }
+            ],
+            "width": 1280.0
+        },
+        {
+            "config": {},
+            "displayName": "Page 2",
+            "displayOption": 1,
+            "filters": [],
+            "height": 720.0,
+            "name": "f5ba307e7d4150c45414",
+            "ordinal": 1,
+            "visualContainers": [
+                {
+                    "config": {
+                        "name": "4641d67552a8d10243ae",
+                        "layouts": [
+                            {
+                                "id": 0,
+                                "position": {
+                                    "x": 10.310701956271576,
+                                    "y": 0,
+                                    "z": 0,
+                                    "width": 1269.6892980437283,
+                                    "height": 720.2761795166858,
+                                    "tabOrder": 0
+                                }
+                            }
+                        ],
+                        "singleVisual": {
+                            "visualType": "tableEx",
+                            "projections": {
+                                "Values": [
+                                    {
+                                        "queryRef": "ev_names.ev_name"
+                                    },
+                                    {
+                                        "queryRef": "charging_data.Charge Power (10-80%)_Fast Charging"
+                                    },
+                                    {
+                                        "queryRef": "charging_data.Charge Speed_Fast Charging"
+                                    },
+                                    {
+                                        "queryRef": "charging_data.Charge Power_Home / Destination"
+                                    },
+                                    {
+                                        "queryRef": "charging_data.Charge Speed_Home / Destination"
+                                    }
+                                ]
+                            },
+                            "prototypeQuery": {
+                                "Version": 2,
+                                "From": [
+                                    {
+                                        "Name": "e",
+                                        "Entity": "ev_names",
+                                        "Type": 0
+                                    },
+                                    {
+                                        "Name": "c",
+                                        "Entity": "charging_data",
+                                        "Type": 0
+                                    }
+                                ],
+                                "Select": [
+                                    {
+                                        "Column": {
+                                            "Expression": {
+                                                "SourceRef": {
+                                                    "Source": "e"
+                                                }
+                                            },
+                                            "Property": "ev_name"
+                                        },
+                                        "Name": "ev_names.ev_name",
+                                        "NativeReferenceName": "ev_name"
+                                    },
+                                    {
+                                        "Column": {
+                                            "Expression": {
+                                                "SourceRef": {
+                                                    "Source": "c"
+                                                }
+                                            },
+                                            "Property": "Charge Power (10-80%)_Fast Charging"
+                                        },
+                                        "Name": "charging_data.Charge Power (10-80%)_Fast Charging",
+                                        "NativeReferenceName": "Charge Power (10-80%)_Fast Charging"
+                                    },
+                                    {
+                                        "Column": {
+                                            "Expression": {
+                                                "SourceRef": {
+                                                    "Source": "c"
+                                                }
+                                            },
+                                            "Property": "Charge Speed_Fast Charging"
+                                        },
+                                        "Name": "charging_data.Charge Speed_Fast Charging",
+                                        "NativeReferenceName": "Charge Speed_Fast Charging"
+                                    },
+                                    {
+                                        "Column": {
+                                            "Expression": {
+                                                "SourceRef": {
+                                                    "Source": "c"
+                                                }
+                                            },
+                                            "Property": "Charge Power_Home / Destination"
+                                        },
+                                        "Name": "charging_data.Charge Power_Home / Destination",
+                                        "NativeReferenceName": "Charge Power_Home / Destination"
+                                    },
+                                    {
+                                        "Column": {
+                                            "Expression": {
+                                                "SourceRef": {
+                                                    "Source": "c"
+                                                }
+                                            },
+                                            "Property": "Charge Speed_Home / Destination"
+                                        },
+                                        "Name": "charging_data.Charge Speed_Home / Destination",
+                                        "NativeReferenceName": "Charge Speed_Home / Destination"
+                                    }
+                                ]
+                            },
+                            "drillFilterOtherVisuals": true
+                        }
+                    },
+                    "filters": [],
+                    "height": 720.28,
+                    "width": 1269.69,
+                    "x": 10.31,
+                    "y": 0.0,
+                    "z": 0.0
+                }
+            ],
+            "width": 1280.0
+        }
+    ]
+}
