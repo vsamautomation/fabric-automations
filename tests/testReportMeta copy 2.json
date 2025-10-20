@@ -1,683 +1,4660 @@
 {
-    "config": {
-        "version": "5.66",
-        "themeCollection": {
-            "baseTheme": {
-                "name": "CY24SU10",
-                "type": 2,
-                "version": {
-                    "visual": "1.8.95",
-                    "report": "2.0.95",
-                    "page": "1.3.95"
-                }
-            }
-        },
-        "activeSectionIndex": 1,
-        "modelExtensions": [
-            {
-                "name": "extension",
-                "entities": [
-                    {
-                        "name": "ev_names",
-                        "extends": "ev_names",
-                        "measures": [
-                            {
-                                "name": "total_cars",
-                                "dataType": 3,
-                                "expression": "DISTINCTCOUNT(ev_names[ev_name])",
-                                "errorMessage": null,
-                                "hidden": false,
-                                "formulaOverride": null,
-                                "formatInformation": {
-                                    "formatString": "G",
-                                    "format": "General",
-                                    "thousandSeparator": false,
-                                    "currencyFormat": null,
-                                    "dateTimeCustomFormat": null
-                                }
-                            }
-                        ]
-                    }
-                ]
-            }
-        ],
-        "defaultDrillFilterOtherVisuals": true,
-        "linguisticSchemaSyncVersion": 0,
-        "settings": {
-            "useNewFilterPaneExperience": true,
-            "allowChangeFilterTypes": true,
-            "useStylableVisualContainerHeader": true,
-            "queryLimitOption": 6,
-            "useEnhancedTooltips": true,
-            "exportDataMode": 1,
-            "useDefaultAggregateDisplayName": true
-        },
-        "objects": {
-            "section": [
-                {
-                    "properties": {
-                        "verticalAlignment": {
-                            "expr": {
-                                "Literal": {
-                                    "Value": "'Top'"
-                                }
-                            }
-                        }
-                    }
-                }
-            ],
-            "outspacePane": [
-                {
-                    "properties": {
-                        "expanded": {
-                            "expr": {
-                                "Literal": {
-                                    "Value": "true"
-                                }
-                            }
-                        }
-                    }
-                }
-            ]
-        }
+  "config": {
+    "version": "5.67",
+    "themeCollection": {
+      "baseTheme": {
+        "name": "CY24SU10",
+        "type": 2,
+        "version": { "visual": "1.8.99", "report": "2.0.99", "page": "1.3.99" }
+      }
     },
-    "layoutOptimization": 0,
-    "resourcePackages": [
+    "activeSectionIndex": 0,
+    "defaultDrillFilterOtherVisuals": true,
+    "linguisticSchemaSyncVersion": 2,
+    "settings": {
+      "useNewFilterPaneExperience": true,
+      "allowChangeFilterTypes": true,
+      "useStylableVisualContainerHeader": true,
+      "queryLimitOption": 6,
+      "useEnhancedTooltips": true,
+      "exportDataMode": 1,
+      "useDefaultAggregateDisplayName": true
+    },
+    "objects": {
+      "section": [
         {
-            "resourcePackage": {
-                "disabled": false,
-                "items": [
-                    {
-                        "name": "CY24SU10",
-                        "path": "BaseThemes/CY24SU10.json",
-                        "type": 202
-                    }
-                ],
-                "name": "SharedResources",
-                "type": 2
+          "properties": {
+            "verticalAlignment": {
+              "expr": { "Literal": { "Value": "\"Top\"" } }
             }
+          }
         }
-    ],
-    "sections": [
+      ]
+    }
+  },
+  "layoutOptimization": 1,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "items": [
+          {
+            "name": "jaffa_logo5434158308223388.png",
+            "path": "jaffa_logo5434158308223388.png",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": {
+        "relationships": [
+          {
+            "source": "5aa2eef3de83c04ea24a",
+            "target": "981d31ce71dda6d3dcec",
+            "type": 3
+          },
+          {
+            "source": "5aa2eef3de83c04ea24a",
+            "target": "9792606673a966a15da3",
+            "type": 3
+          },
+          {
+            "source": "5aa2eef3de83c04ea24a",
+            "target": "53741aaa598dc7bae30e",
+            "type": 3
+          },
+          {
+            "source": "5aa2eef3de83c04ea24a",
+            "target": "bd8630ba93a63750c96b",
+            "type": 3
+          },
+          {
+            "source": "5aa2eef3de83c04ea24a",
+            "target": "587e1d13820d916dd3b3",
+            "type": 3
+          },
+          {
+            "source": "5aa2eef3de83c04ea24a",
+            "target": "7f3a43aed5e6129b42a7",
+            "type": 3
+          },
+          {
+            "source": "5aa2eef3de83c04ea24a",
+            "target": "a11a689c766b54bd8e19",
+            "type": 3
+          },
+          {
+            "source": "5aa2eef3de83c04ea24a",
+            "target": "bb285a0e580d5204041b",
+            "type": 3
+          },
+          {
+            "source": "5aa2eef3de83c04ea24a",
+            "target": "2d37e97c5be892978764",
+            "type": 3
+          },
+          {
+            "source": "5aa2eef3de83c04ea24a",
+            "target": "a3e5c86b104aa6109e52",
+            "type": 3
+          },
+          {
+            "source": "5aa2eef3de83c04ea24a",
+            "target": "0f131130dd4767713075",
+            "type": 3
+          },
+          {
+            "source": "5aa2eef3de83c04ea24a",
+            "target": "df4440efa79a0e05bc1a",
+            "type": 3
+          }
+        ],
+        "objects": {
+          "displayArea": [
+            {
+              "properties": {
+                "verticalAlignment": {
+                  "expr": { "Literal": { "Value": "\"Middle\"" } }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "displayName": "Summary",
+      "displayOption": 1,
+      "filters": [],
+      "height": 720.0,
+      "name": "86215f647539064dd22d",
+      "visualContainers": [
         {
-            "config": {},
-            "displayName": "Page 1",
-            "displayOption": 1,
-            "filters": [
-                {
-                    "name": "580636757c5d8e6d13dc",
-                    "expression": {
-                        "Column": {
-                            "Expression": {
-                                "SourceRef": {
-                                    "Entity": "charging_data"
-                                }
-                            },
-                            "Property": "Charge Speed_Fast Charging"
-                        }
-                    },
-                    "filter": {
-                        "Version": 2,
-                        "From": [
-                            {
-                                "Name": "c",
-                                "Entity": "charging_data",
-                                "Type": 0
-                            }
-                        ],
-                        "Where": [
-                            {
-                                "Condition": {
-                                    "In": {
-                                        "Expressions": [
-                                            {
-                                                "Column": {
-                                                    "Expression": {
-                                                        "SourceRef": {
-                                                            "Source": "c"
-                                                        }
-                                                    },
-                                                    "Property": "Charge Speed_Fast Charging"
-                                                }
-                                            }
-                                        ],
-                                        "Values": [
-                                            [
-                                                {
-                                                    "Literal": {
-                                                        "Value": "'170 km/h'"
-                                                    }
-                                                }
-                                            ]
-                                        ]
-                                    }
-                                }
-                            }
-                        ]
-                    },
-                    "type": "Categorical",
-                    "howCreated": 1,
-                    "objects": {}
+          "config": {
+            "name": "0e777df0a0199a5e5e69",
+            "layouts": [
+              {
+                "id": 0,
+                "position": {
+                  "height": 117.26708074534159,
+                  "width": 399.5031055900621,
+                  "x": 191.80745341614906,
+                  "y": 0,
+                  "z": 0,
+                  "tabOrder": 1000
                 }
+              }
             ],
-            "height": 720.0,
-            "name": "70ee8cebe21232079804",
-            "visualContainers": [
-                {
-                    "config": {
-                        "name": "8ac4e84cba8b50b038d0",
-                        "layouts": [
-                            {
-                                "id": 0,
-                                "position": {
-                                    "x": 0,
-                                    "y": 0,
-                                    "z": 0,
-                                    "width": 476.40081799591,
-                                    "height": 552.3108384458078,
-                                    "tabOrder": 0
-                                }
-                            }
-                        ],
-                        "singleVisual": {
-                            "visualType": "tableEx",
-                            "projections": {
-                                "Values": [
-                                    {
-                                        "queryRef": "ev_names.ev_name"
-                                    },
-                                    {
-                                        "queryRef": "ev_names.ev_model"
-                                    }
-                                ]
-                            },
-                            "prototypeQuery": {
-                                "Version": 2,
-                                "From": [
-                                    {
-                                        "Name": "e",
-                                        "Entity": "ev_names",
-                                        "Type": 0
-                                    }
-                                ],
-                                "Select": [
-                                    {
-                                        "Column": {
-                                            "Expression": {
-                                                "SourceRef": {
-                                                    "Source": "e"
-                                                }
-                                            },
-                                            "Property": "ev_model"
-                                        },
-                                        "Name": "ev_names.ev_model",
-                                        "NativeReferenceName": "Model"
-                                    },
-                                    {
-                                        "Column": {
-                                            "Expression": {
-                                                "SourceRef": {
-                                                    "Source": "e"
-                                                }
-                                            },
-                                            "Property": "ev_name"
-                                        },
-                                        "Name": "ev_names.ev_name",
-                                        "NativeReferenceName": "Vehicle Name"
-                                    }
-                                ],
-                                "OrderBy": [
-                                    {
-                                        "Direction": 1,
-                                        "Expression": {
-                                            "Column": {
-                                                "Expression": {
-                                                    "SourceRef": {
-                                                        "Source": "e"
-                                                    }
-                                                },
-                                                "Property": "ev_name"
-                                            }
-                                        }
-                                    }
-                                ]
-                            },
-                            "autoSelectVisualType": false,
-                            "columnProperties": {
-                                "ev_names.ev_name": {
-                                    "displayName": "Vehicle Name"
-                                },
-                                "ev_names.ev_model": {
-                                    "displayName": "Model"
-                                }
-                            },
-                            "drillFilterOtherVisuals": true
-                        }
-                    },
-                    "filters": [
-                        {
-                            "name": "4ccd1508a084354b30b1",
-                            "expression": {
-                                "Column": {
-                                    "Expression": {
-                                        "SourceRef": {
-                                            "Entity": "ev_names"
-                                        }
-                                    },
-                                    "Property": "ev_make"
-                                }
-                            },
-                            "filter": {
-                                "Version": 2,
-                                "From": [
-                                    {
-                                        "Name": "e",
-                                        "Entity": "ev_names",
-                                        "Type": 0
-                                    }
-                                ],
-                                "Where": [
-                                    {
-                                        "Condition": {
-                                            "In": {
-                                                "Expressions": [
-                                                    {
-                                                        "Column": {
-                                                            "Expression": {
-                                                                "SourceRef": {
-                                                                    "Source": "e"
-                                                                }
-                                                            },
-                                                            "Property": "ev_make"
-                                                        }
-                                                    }
-                                                ],
-                                                "Values": [
-                                                    [
-                                                        {
-                                                            "Literal": {
-                                                                "Value": "'Dacia'"
-                                                            }
-                                                        }
-                                                    ]
-                                                ]
-                                            }
-                                        }
-                                    }
-                                ]
-                            },
-                            "type": "Categorical",
-                            "howCreated": 1,
-                            "objects": {}
-                        }
-                    ],
-                    "height": 552.31,
-                    "width": 476.4,
-                    "x": 0.0,
-                    "y": 0.0,
-                    "z": 0.0
-                },
-                {
-                    "config": {
-                        "name": "bf88d7567a2019011b35",
-                        "layouts": [
-                            {
-                                "id": 0,
-                                "position": {
-                                    "x": 476.40081799591,
-                                    "y": 270.92024539877303,
-                                    "z": 2000,
-                                    "width": 308.22085889570553,
-                                    "height": 157.70961145194275,
-                                    "tabOrder": 2000
-                                }
-                            }
-                        ],
-                        "singleVisual": {
-                            "visualType": "card",
-                            "projections": {
-                                "Values": [
-                                    {
-                                        "queryRef": "ev_names.total_cars"
-                                    }
-                                ]
-                            },
-                            "prototypeQuery": {
-                                "Version": 2,
-                                "From": [
-                                    {
-                                        "Name": "e",
-                                        "Entity": "ev_names",
-                                        "Schema": "extension",
-                                        "Type": 0
-                                    }
-                                ],
-                                "Select": [
-                                    {
-                                        "Measure": {
-                                            "Expression": {
-                                                "SourceRef": {
-                                                    "Source": "e"
-                                                }
-                                            },
-                                            "Property": "total_cars"
-                                        },
-                                        "Name": "ev_names.total_cars",
-                                        "NativeReferenceName": "total_cars"
-                                    }
-                                ],
-                                "OrderBy": [
-                                    {
-                                        "Direction": 2,
-                                        "Expression": {
-                                            "Measure": {
-                                                "Expression": {
-                                                    "SourceRef": {
-                                                        "Source": "e"
-                                                    }
-                                                },
-                                                "Property": "total_cars"
-                                            }
-                                        }
-                                    }
-                                ]
-                            },
-                            "drillFilterOtherVisuals": true,
-                            "hasDefaultSort": true
-                        }
-                    },
-                    "filters": [],
-                    "height": 157.71,
-                    "width": 308.22,
-                    "x": 476.4,
-                    "y": 270.92,
-                    "z": 2000.0
-                },
-                {
-                    "config": {
-                        "name": "d9b11591be9a101800cc",
-                        "layouts": [
-                            {
-                                "id": 0,
-                                "position": {
-                                    "x": 476.40081799591,
-                                    "y": 0,
-                                    "z": 1000,
-                                    "width": 319.34560327198363,
-                                    "height": 265.6850715746421,
-                                    "tabOrder": 1000
-                                }
-                            }
-                        ],
-                        "singleVisual": {
-                            "visualType": "clusteredBarChart",
-                            "projections": {
-                                "Category": [
-                                    {
-                                        "queryRef": "ev_names.ev_make",
-                                        "active": true
-                                    }
-                                ],
-                                "Y": [
-                                    {
-                                        "queryRef": "ev_names.total_cars"
-                                    }
-                                ]
-                            },
-                            "prototypeQuery": {
-                                "Version": 2,
-                                "From": [
-                                    {
-                                        "Name": "e",
-                                        "Entity": "ev_names",
-                                        "Type": 0
-                                    },
-                                    {
-                                        "Name": "e1",
-                                        "Entity": "ev_names",
-                                        "Schema": "extension",
-                                        "Type": 0
-                                    }
-                                ],
-                                "Select": [
-                                    {
-                                        "Column": {
-                                            "Expression": {
-                                                "SourceRef": {
-                                                    "Source": "e"
-                                                }
-                                            },
-                                            "Property": "ev_make"
-                                        },
-                                        "Name": "ev_names.ev_make",
-                                        "NativeReferenceName": "ev_make"
-                                    },
-                                    {
-                                        "Measure": {
-                                            "Expression": {
-                                                "SourceRef": {
-                                                    "Source": "e1"
-                                                }
-                                            },
-                                            "Property": "total_cars"
-                                        },
-                                        "Name": "ev_names.total_cars",
-                                        "NativeReferenceName": "total_cars"
-                                    }
-                                ],
-                                "OrderBy": [
-                                    {
-                                        "Direction": 2,
-                                        "Expression": {
-                                            "Measure": {
-                                                "Expression": {
-                                                    "SourceRef": {
-                                                        "Source": "e1"
-                                                    }
-                                                },
-                                                "Property": "total_cars"
-                                            }
-                                        }
-                                    }
-                                ]
-                            },
-                            "drillFilterOtherVisuals": true,
-                            "hasDefaultSort": true,
-                            "objects": {
-                                "labels": [
-                                    {
-                                        "properties": {
-                                            "show": {
-                                                "expr": {
-                                                    "Literal": {
-                                                        "Value": "true"
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                ],
-                                "valueAxis": [
-                                    {
-                                        "properties": {
-                                            "showAxisTitle": {
-                                                "expr": {
-                                                    "Literal": {
-                                                        "Value": "false"
-                                                    }
-                                                }
-                                            },
-                                            "show": {
-                                                "expr": {
-                                                    "Literal": {
-                                                        "Value": "false"
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                ],
-                                "categoryAxis": [
-                                    {
-                                        "properties": {
-                                            "showAxisTitle": {
-                                                "expr": {
-                                                    "Literal": {
-                                                        "Value": "false"
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                ]
-                            }
-                        }
-                    },
-                    "filters": [],
-                    "height": 265.69,
-                    "width": 319.35,
-                    "x": 476.4,
-                    "y": 0.0,
-                    "z": 1000.0
-                }
-            ],
-            "width": 1280.0
+            "singleVisualGroup": { "displayName": "Group 3", "groupMode": 0 },
+            "parentGroupName": "b94fb056ec026e00b915"
+          },
+          "height": 117.27,
+          "width": 399.5,
+          "x": 191.81,
+          "y": 0.0,
+          "z": 0.0
         },
         {
-            "config": {},
-            "displayName": "Page 2",
-            "displayOption": 1,
-            "filters": [],
-            "height": 720.0,
-            "name": "f5ba307e7d4150c45414",
-            "ordinal": 1,
-            "visualContainers": [
-                {
-                    "config": {
-                        "name": "4641d67552a8d10243ae",
-                        "layouts": [
-                            {
-                                "id": 0,
-                                "position": {
-                                    "x": 10.310701956271576,
-                                    "y": 0,
-                                    "z": 0,
-                                    "width": 1269.6892980437283,
-                                    "height": 720.2761795166858,
-                                    "tabOrder": 0
-                                }
-                            }
-                        ],
-                        "singleVisual": {
-                            "visualType": "tableEx",
-                            "projections": {
-                                "Values": [
-                                    {
-                                        "queryRef": "ev_names.ev_name"
-                                    },
-                                    {
-                                        "queryRef": "charging_data.Charge Power (10-80%)_Fast Charging"
-                                    },
-                                    {
-                                        "queryRef": "charging_data.Charge Speed_Fast Charging"
-                                    },
-                                    {
-                                        "queryRef": "charging_data.Charge Power_Home / Destination"
-                                    },
-                                    {
-                                        "queryRef": "charging_data.Charge Speed_Home / Destination"
-                                    }
-                                ]
-                            },
-                            "prototypeQuery": {
-                                "Version": 2,
-                                "From": [
-                                    {
-                                        "Name": "e",
-                                        "Entity": "ev_names",
-                                        "Type": 0
-                                    },
-                                    {
-                                        "Name": "c",
-                                        "Entity": "charging_data",
-                                        "Type": 0
-                                    }
-                                ],
-                                "Select": [
-                                    {
-                                        "Column": {
-                                            "Expression": {
-                                                "SourceRef": {
-                                                    "Source": "e"
-                                                }
-                                            },
-                                            "Property": "ev_name"
-                                        },
-                                        "Name": "ev_names.ev_name",
-                                        "NativeReferenceName": "ev_name"
-                                    },
-                                    {
-                                        "Column": {
-                                            "Expression": {
-                                                "SourceRef": {
-                                                    "Source": "c"
-                                                }
-                                            },
-                                            "Property": "Charge Power (10-80%)_Fast Charging"
-                                        },
-                                        "Name": "charging_data.Charge Power (10-80%)_Fast Charging",
-                                        "NativeReferenceName": "Charge Power (10-80%)_Fast Charging"
-                                    },
-                                    {
-                                        "Column": {
-                                            "Expression": {
-                                                "SourceRef": {
-                                                    "Source": "c"
-                                                }
-                                            },
-                                            "Property": "Charge Speed_Fast Charging"
-                                        },
-                                        "Name": "charging_data.Charge Speed_Fast Charging",
-                                        "NativeReferenceName": "Charge Speed_Fast Charging"
-                                    },
-                                    {
-                                        "Column": {
-                                            "Expression": {
-                                                "SourceRef": {
-                                                    "Source": "c"
-                                                }
-                                            },
-                                            "Property": "Charge Power_Home / Destination"
-                                        },
-                                        "Name": "charging_data.Charge Power_Home / Destination",
-                                        "NativeReferenceName": "Charge Power_Home / Destination"
-                                    },
-                                    {
-                                        "Column": {
-                                            "Expression": {
-                                                "SourceRef": {
-                                                    "Source": "c"
-                                                }
-                                            },
-                                            "Property": "Charge Speed_Home / Destination"
-                                        },
-                                        "Name": "charging_data.Charge Speed_Home / Destination",
-                                        "NativeReferenceName": "Charge Speed_Home / Destination"
-                                    }
-                                ]
-                            },
-                            "drillFilterOtherVisuals": true
-                        }
-                    },
-                    "filters": [],
-                    "height": 720.28,
-                    "width": 1269.69,
-                    "x": 10.31,
-                    "y": 0.0,
-                    "z": 0.0
+          "config": {
+            "name": "0f131130dd4767713075",
+            "layouts": [
+              {
+                "id": 0,
+                "position": {
+                  "height": 29.813664596273288,
+                  "width": 199.75155279503105,
+                  "x": 0,
+                  "y": 83.4782608695652,
+                  "z": 4000,
+                  "tabOrder": 1000
                 }
+              },
+              {
+                "id": 1,
+                "position": {
+                  "x": 171,
+                  "y": 146,
+                  "z": 15000,
+                  "width": 145,
+                  "height": 25,
+                  "tabOrder": 15000
+                }
+              }
             ],
-            "width": 1280.0
+            "singleVisual": {
+              "visualType": "card",
+              "projections": {
+                "Values": [{ "queryRef": "_Measures.MoM Margin Text" }]
+              },
+              "prototypeQuery": {
+                "Version": 2,
+                "From": [{ "Name": "_", "Entity": "_Measures", "Type": 0 }],
+                "Select": [
+                  {
+                    "Measure": {
+                      "Expression": { "SourceRef": { "Source": "_" } },
+                      "Property": "MoM Margin Text"
+                    },
+                    "Name": "_Measures.MoM Margin Text",
+                    "NativeReferenceName": "MoM Margin Text"
+                  }
+                ]
+              },
+              "drillFilterOtherVisuals": true,
+              "hasDefaultSort": true,
+              "objects": {
+                "categoryLabels": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } }
+                    }
+                  }
+                ],
+                "labels": [
+                  {
+                    "properties": {
+                      "fontSize": { "expr": { "Literal": { "Value": "12D" } } },
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "Conditional": {
+                                "Cases": [
+                                  {
+                                    "Condition": {
+                                      "Comparison": {
+                                        "ComparisonKind": 2,
+                                        "Left": {
+                                          "Measure": {
+                                            "Expression": {
+                                              "SourceRef": {
+                                                "Entity": "_Measures"
+                                              }
+                                            },
+                                            "Property": "MoM Margin"
+                                          }
+                                        },
+                                        "Right": {
+                                          "Literal": { "Value": "0D" }
+                                        }
+                                      }
+                                    },
+                                    "Value": {
+                                      "Literal": { "Value": "\"#01A655\"" }
+                                    }
+                                  },
+                                  {
+                                    "Condition": {
+                                      "Comparison": {
+                                        "ComparisonKind": 3,
+                                        "Left": {
+                                          "Measure": {
+                                            "Expression": {
+                                              "SourceRef": {
+                                                "Entity": "_Measures"
+                                              }
+                                            },
+                                            "Property": "MoM Margin"
+                                          }
+                                        },
+                                        "Right": {
+                                          "Literal": { "Value": "0D" }
+                                        }
+                                      }
+                                    },
+                                    "Value": {
+                                      "Literal": { "Value": "\"#D64550\"" }
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              "vcObjects": {
+                "padding": [
+                  {
+                    "properties": {
+                      "top": { "expr": { "Literal": { "Value": "0D" } } },
+                      "right": { "expr": { "Literal": { "Value": "0D" } } },
+                      "bottom": { "expr": { "Literal": { "Value": "0D" } } },
+                      "left": { "expr": { "Literal": { "Value": "0D" } } }
+                    }
+                  }
+                ]
+              }
+            },
+            "parentGroupName": "79e419b24200c253db51"
+          },
+          "filters": [],
+          "height": 29.81,
+          "width": 199.75,
+          "x": 0.0,
+          "y": 83.48,
+          "z": 4000.0
+        },
+        {
+          "config": {
+            "name": "2974acf02e89192bbc3e",
+            "layouts": [
+              {
+                "id": 0,
+                "position": {
+                  "x": 913.2857142857142,
+                  "y": 255.3975155279503,
+                  "z": 6000,
+                  "width": 350,
+                  "height": 215,
+                  "tabOrder": 6000
+                }
+              },
+              {
+                "id": 1,
+                "position": {
+                  "x": 0,
+                  "y": 1001,
+                  "z": 8000,
+                  "width": 324,
+                  "height": 199,
+                  "tabOrder": 6000
+                }
+              }
+            ],
+            "singleVisual": {
+              "visualType": "barChart",
+              "projections": {
+                "Category": [{ "queryRef": "stock.size", "active": true }],
+                "Y": [{ "queryRef": "_Measures.Total Sales" }]
+              },
+              "prototypeQuery": {
+                "Version": 2,
+                "From": [
+                  { "Name": "_", "Entity": "_Measures", "Type": 0 },
+                  { "Name": "s", "Entity": "stock", "Type": 0 }
+                ],
+                "Select": [
+                  {
+                    "Measure": {
+                      "Expression": { "SourceRef": { "Source": "_" } },
+                      "Property": "Total Sales"
+                    },
+                    "Name": "_Measures.Total Sales",
+                    "NativeReferenceName": "Total Sales"
+                  },
+                  {
+                    "Column": {
+                      "Expression": { "SourceRef": { "Source": "s" } },
+                      "Property": "size"
+                    },
+                    "Name": "stock.size",
+                    "NativeReferenceName": "size"
+                  }
+                ],
+                "OrderBy": [
+                  {
+                    "Direction": 2,
+                    "Expression": {
+                      "Measure": {
+                        "Expression": { "SourceRef": { "Source": "_" } },
+                        "Property": "Total Sales"
+                      }
+                    }
+                  }
+                ]
+              },
+              "drillFilterOtherVisuals": true,
+              "hasDefaultSort": true,
+              "objects": {
+                "layout": [{ "properties": {} }],
+                "labels": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "true" } } }
+                    }
+                  },
+                  {
+                    "properties": {
+                      "showSeries": {
+                        "expr": { "Literal": { "Value": "true" } }
+                      },
+                      "labelPosition": {
+                        "expr": { "Literal": { "Value": "\"OutsideEnd\"" } }
+                      }
+                    },
+                    "selector": { "metadata": "_Measures.Total Sales" }
+                  }
+                ],
+                "legend": [
+                  {
+                    "properties": {
+                      "showGradientLegend": {
+                        "expr": { "Literal": { "Value": "false" } }
+                      },
+                      "show": { "expr": { "Literal": { "Value": "false" } } }
+                    }
+                  }
+                ],
+                "valueAxis": [
+                  {
+                    "properties": {
+                      "showAxisTitle": {
+                        "expr": { "Literal": { "Value": "false" } }
+                      },
+                      "labelDisplayUnits": {
+                        "expr": { "Literal": { "Value": "1000D" } }
+                      },
+                      "show": { "expr": { "Literal": { "Value": "false" } } }
+                    }
+                  }
+                ],
+                "categoryAxis": [
+                  {
+                    "properties": {
+                      "axisType": {
+                        "expr": { "Literal": { "Value": "\"Categorical\"" } }
+                      },
+                      "showAxisTitle": {
+                        "expr": { "Literal": { "Value": "false" } }
+                      },
+                      "maxMarginFactor": {
+                        "expr": { "Literal": { "Value": "50L" } }
+                      }
+                    }
+                  }
+                ]
+              },
+              "vcObjects": {
+                "title": [
+                  {
+                    "properties": {
+                      "text": {
+                        "expr": {
+                          "Literal": { "Value": "\"Top 5 Items by Sales\"" }
+                        }
+                      },
+                      "alignment": {
+                        "expr": { "Literal": { "Value": "\"center\"" } }
+                      }
+                    }
+                  }
+                ],
+                "border": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "true" } } },
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": { "ColorId": 0, "Percent": 0 }
+                            }
+                          }
+                        }
+                      },
+                      "radius": { "expr": { "Literal": { "Value": "10D" } } }
+                    }
+                  }
+                ],
+                "dropShadow": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "true" } } },
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": 0,
+                                "Percent": -0.2
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "preset": {
+                        "expr": { "Literal": { "Value": "\"Center\"" } }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "filters": [
+            {
+              "expression": {
+                "Column": {
+                  "Expression": { "SourceRef": { "Entity": "stock" } },
+                  "Property": "size"
+                }
+              },
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "subquery",
+                    "Expression": {
+                      "Subquery": {
+                        "Query": {
+                          "Version": 2,
+                          "From": [
+                            { "Name": "s", "Entity": "stock", "Type": 0 },
+                            { "Name": "_", "Entity": "_Measures", "Type": 0 }
+                          ],
+                          "Select": [
+                            {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": { "Source": "s" }
+                                },
+                                "Property": "size"
+                              },
+                              "Name": "field"
+                            }
+                          ],
+                          "OrderBy": [
+                            {
+                              "Direction": 2,
+                              "Expression": {
+                                "Measure": {
+                                  "Expression": {
+                                    "SourceRef": { "Source": "_" }
+                                  },
+                                  "Property": "Total Sales"
+                                }
+                              }
+                            }
+                          ],
+                          "Top": 5
+                        }
+                      }
+                    },
+                    "Type": 2
+                  },
+                  { "Name": "s", "Entity": "stock", "Type": 0 }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": { "SourceRef": { "Source": "s" } },
+                              "Property": "size"
+                            }
+                          }
+                        ],
+                        "Table": { "SourceRef": { "Source": "subquery" } }
+                      }
+                    }
+                  }
+                ]
+              },
+              "type": "TopN",
+              "howCreated": 0,
+              "isHiddenInViewMode": false
+            }
+          ],
+          "height": 215.0,
+          "width": 350.0,
+          "x": 913.29,
+          "y": 255.4,
+          "z": 6000.0
+        },
+        {
+          "config": {
+            "name": "2d37e97c5be892978764",
+            "layouts": [
+              {
+                "id": 0,
+                "position": {
+                  "height": 29.813664596273288,
+                  "width": 199.75155279503105,
+                  "x": 7.105427357601002e-15,
+                  "y": 87.4534161490683,
+                  "z": 9000,
+                  "tabOrder": 1000
+                }
+              },
+              {
+                "id": 1,
+                "position": {
+                  "x": 7,
+                  "y": 146,
+                  "z": 17000,
+                  "width": 145,
+                  "height": 25,
+                  "tabOrder": 17000
+                }
+              }
+            ],
+            "singleVisual": {
+              "visualType": "card",
+              "projections": {
+                "Values": [{ "queryRef": "_Measures.MoM Text" }]
+              },
+              "prototypeQuery": {
+                "Version": 2,
+                "From": [{ "Name": "_", "Entity": "_Measures", "Type": 0 }],
+                "Select": [
+                  {
+                    "Measure": {
+                      "Expression": { "SourceRef": { "Source": "_" } },
+                      "Property": "MoM Text"
+                    },
+                    "Name": "_Measures.MoM Text",
+                    "NativeReferenceName": "MoM Text"
+                  }
+                ]
+              },
+              "drillFilterOtherVisuals": true,
+              "hasDefaultSort": true,
+              "objects": {
+                "categoryLabels": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } }
+                    }
+                  }
+                ],
+                "labels": [
+                  {
+                    "properties": {
+                      "fontSize": { "expr": { "Literal": { "Value": "12D" } } },
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "Conditional": {
+                                "Cases": [
+                                  {
+                                    "Condition": {
+                                      "Comparison": {
+                                        "ComparisonKind": 2,
+                                        "Left": {
+                                          "Measure": {
+                                            "Expression": {
+                                              "SourceRef": {
+                                                "Entity": "_Measures"
+                                              }
+                                            },
+                                            "Property": "MoM Sales"
+                                          }
+                                        },
+                                        "Right": {
+                                          "Literal": { "Value": "0D" }
+                                        }
+                                      }
+                                    },
+                                    "Value": {
+                                      "Literal": { "Value": "\"#01A655\"" }
+                                    }
+                                  },
+                                  {
+                                    "Condition": {
+                                      "Comparison": {
+                                        "ComparisonKind": 3,
+                                        "Left": {
+                                          "Measure": {
+                                            "Expression": {
+                                              "SourceRef": {
+                                                "Entity": "_Measures"
+                                              }
+                                            },
+                                            "Property": "MoM Sales"
+                                          }
+                                        },
+                                        "Right": {
+                                          "Literal": { "Value": "0D" }
+                                        }
+                                      }
+                                    },
+                                    "Value": {
+                                      "Literal": { "Value": "\"#D64550\"" }
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              "vcObjects": {
+                "padding": [
+                  {
+                    "properties": {
+                      "top": { "expr": { "Literal": { "Value": "0D" } } },
+                      "right": { "expr": { "Literal": { "Value": "0D" } } },
+                      "bottom": { "expr": { "Literal": { "Value": "0D" } } },
+                      "left": { "expr": { "Literal": { "Value": "0D" } } }
+                    }
+                  }
+                ]
+              }
+            },
+            "parentGroupName": "e675f2c34e64a30e6050"
+          },
+          "filters": [],
+          "height": 29.81,
+          "width": 199.75,
+          "x": 0.0,
+          "y": 87.45,
+          "z": 9000.0
+        },
+        {
+          "config": {
+            "name": "342f0c3ba26a6971d918",
+            "layouts": [
+              {
+                "id": 0,
+                "position": {
+                  "height": 35.77639751552795,
+                  "width": 126.21118012422359,
+                  "x": 0,
+                  "y": 0,
+                  "z": 4000,
+                  "tabOrder": 0
+                }
+              },
+              {
+                "id": 1,
+                "position": {
+                  "x": 7,
+                  "y": 79,
+                  "z": 10000,
+                  "width": 145,
+                  "height": 30,
+                  "tabOrder": 9000
+                }
+              }
+            ],
+            "singleVisual": {
+              "visualType": "textbox",
+              "drillFilterOtherVisuals": true,
+              "objects": {
+                "general": [
+                  {
+                    "properties": {
+                      "paragraphs": [
+                        {
+                          "textRuns": [
+                            {
+                              "value": "Total Sales",
+                              "textStyle": {
+                                "fontFamily": "Trebuchet MS",
+                                "fontSize": "14pt"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              "vcObjects": {
+                "background": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } }
+                    }
+                  }
+                ]
+              }
+            },
+            "parentGroupName": "f803fcf876e2d1d0b08e"
+          },
+          "filters": [],
+          "height": 35.78,
+          "width": 126.21,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 4000.0
+        },
+        {
+          "config": {
+            "name": "3835c762086be398855d",
+            "layouts": [
+              {
+                "id": 0,
+                "position": {
+                  "height": 127.20496894409936,
+                  "width": 11.925465838509316,
+                  "x": 398.50931677018616,
+                  "y": 13.664596273291949,
+                  "z": 16000,
+                  "tabOrder": 2000
+                }
+              }
+            ],
+            "singleVisual": {
+              "visualType": "shape",
+              "drillFilterOtherVisuals": true,
+              "objects": {
+                "shape": [
+                  {
+                    "properties": {
+                      "tileShape": {
+                        "expr": { "Literal": { "Value": "\"line\"" } }
+                      }
+                    }
+                  }
+                ],
+                "rotation": [
+                  {
+                    "properties": {
+                      "shapeAngle": {
+                        "expr": { "Literal": { "Value": "0L" } }
+                      },
+                      "angle": { "expr": { "Literal": { "Value": "90D" } } }
+                    }
+                  }
+                ],
+                "fill": [
+                  {
+                    "properties": {
+                      "fillColor": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": { "ColorId": 6, "Percent": 0.4 }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "selector": { "id": "default" }
+                  },
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } }
+                    }
+                  }
+                ],
+                "outline": [
+                  {
+                    "properties": {
+                      "lineColor": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": 0,
+                                "Percent": -0.1
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "transparency": {
+                        "expr": { "Literal": { "Value": "50D" } }
+                      }
+                    },
+                    "selector": { "id": "default" }
+                  }
+                ]
+              }
+            },
+            "parentGroupName": "55a86309c290d04a25a0",
+            "howCreated": "InsertVisualButton"
+          },
+          "filters": [],
+          "height": 127.2,
+          "width": 11.93,
+          "x": 398.51,
+          "y": 13.66,
+          "z": 16000.0
+        },
+        {
+          "config": {
+            "name": "3abe45c30b67ddb03439",
+            "layouts": [
+              {
+                "id": 0,
+                "position": {
+                  "x": 913.2919254658384,
+                  "y": 481.9875776397515,
+                  "z": 7000,
+                  "width": 349.81366459627327,
+                  "height": 215,
+                  "tabOrder": 7000
+                }
+              },
+              {
+                "id": 1,
+                "position": {
+                  "x": 0,
+                  "y": 1213,
+                  "z": 9000,
+                  "width": 324,
+                  "height": 199,
+                  "tabOrder": 7000
+                }
+              }
+            ],
+            "singleVisual": {
+              "visualType": "barChart",
+              "projections": {
+                "Category": [{ "queryRef": "stock.size", "active": true }],
+                "Y": [{ "queryRef": "_Measures.Total Margin" }]
+              },
+              "prototypeQuery": {
+                "Version": 2,
+                "From": [
+                  { "Name": "s", "Entity": "stock", "Type": 0 },
+                  { "Name": "_", "Entity": "_Measures", "Type": 0 }
+                ],
+                "Select": [
+                  {
+                    "Column": {
+                      "Expression": { "SourceRef": { "Source": "s" } },
+                      "Property": "size"
+                    },
+                    "Name": "stock.size",
+                    "NativeReferenceName": "size"
+                  },
+                  {
+                    "Measure": {
+                      "Expression": { "SourceRef": { "Source": "_" } },
+                      "Property": "Total Margin"
+                    },
+                    "Name": "_Measures.Total Margin",
+                    "NativeReferenceName": "Total Margin"
+                  }
+                ],
+                "OrderBy": [
+                  {
+                    "Direction": 2,
+                    "Expression": {
+                      "Measure": {
+                        "Expression": { "SourceRef": { "Source": "_" } },
+                        "Property": "Total Margin"
+                      }
+                    }
+                  }
+                ]
+              },
+              "drillFilterOtherVisuals": true,
+              "hasDefaultSort": true,
+              "objects": {
+                "layout": [{ "properties": {} }],
+                "labels": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "true" } } }
+                    }
+                  }
+                ],
+                "legend": [
+                  {
+                    "properties": {
+                      "showGradientLegend": {
+                        "expr": { "Literal": { "Value": "false" } }
+                      },
+                      "show": { "expr": { "Literal": { "Value": "false" } } }
+                    }
+                  }
+                ],
+                "valueAxis": [
+                  {
+                    "properties": {
+                      "showAxisTitle": {
+                        "expr": { "Literal": { "Value": "false" } }
+                      },
+                      "labelDisplayUnits": {
+                        "expr": { "Literal": { "Value": "1000D" } }
+                      },
+                      "show": { "expr": { "Literal": { "Value": "false" } } }
+                    }
+                  }
+                ],
+                "categoryAxis": [
+                  {
+                    "properties": {
+                      "axisType": {
+                        "expr": { "Literal": { "Value": "\"Categorical\"" } }
+                      },
+                      "showAxisTitle": {
+                        "expr": { "Literal": { "Value": "false" } }
+                      },
+                      "maxMarginFactor": {
+                        "expr": { "Literal": { "Value": "50L" } }
+                      }
+                    }
+                  }
+                ]
+              },
+              "vcObjects": {
+                "title": [
+                  {
+                    "properties": {
+                      "text": {
+                        "expr": {
+                          "Literal": { "Value": "\"Top 5 Items by Margin\"" }
+                        }
+                      },
+                      "alignment": {
+                        "expr": { "Literal": { "Value": "\"center\"" } }
+                      }
+                    }
+                  }
+                ],
+                "border": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "true" } } },
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": { "ColorId": 0, "Percent": 0 }
+                            }
+                          }
+                        }
+                      },
+                      "radius": { "expr": { "Literal": { "Value": "10D" } } }
+                    }
+                  }
+                ],
+                "dropShadow": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "true" } } },
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": 0,
+                                "Percent": -0.2
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "preset": {
+                        "expr": { "Literal": { "Value": "\"Center\"" } }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "filters": [
+            {
+              "expression": {
+                "Column": {
+                  "Expression": { "SourceRef": { "Entity": "stock" } },
+                  "Property": "size"
+                }
+              },
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "subquery",
+                    "Expression": {
+                      "Subquery": {
+                        "Query": {
+                          "Version": 2,
+                          "From": [
+                            { "Name": "s", "Entity": "stock", "Type": 0 },
+                            { "Name": "_", "Entity": "_Measures", "Type": 0 }
+                          ],
+                          "Select": [
+                            {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": { "Source": "s" }
+                                },
+                                "Property": "size"
+                              },
+                              "Name": "field"
+                            }
+                          ],
+                          "OrderBy": [
+                            {
+                              "Direction": 2,
+                              "Expression": {
+                                "Measure": {
+                                  "Expression": {
+                                    "SourceRef": { "Source": "_" }
+                                  },
+                                  "Property": "Total Margin"
+                                }
+                              }
+                            }
+                          ],
+                          "Top": 5
+                        }
+                      }
+                    },
+                    "Type": 2
+                  },
+                  { "Name": "s", "Entity": "stock", "Type": 0 }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": { "SourceRef": { "Source": "s" } },
+                              "Property": "size"
+                            }
+                          }
+                        ],
+                        "Table": { "SourceRef": { "Source": "subquery" } }
+                      }
+                    }
+                  }
+                ]
+              },
+              "type": "TopN",
+              "howCreated": 0,
+              "isHiddenInViewMode": false
+            }
+          ],
+          "height": 215.0,
+          "width": 349.81,
+          "x": 913.29,
+          "y": 481.99,
+          "z": 7000.0
+        },
+        {
+          "config": {
+            "name": "44ff681b0069d5a488e9",
+            "layouts": [
+              {
+                "id": 0,
+                "position": {
+                  "x": 853.6645962732919,
+                  "y": 9.93167701863354,
+                  "z": 9000,
+                  "width": 199.75155279503105,
+                  "height": 65.59006211180123,
+                  "tabOrder": 9000
+                }
+              }
+            ],
+            "singleVisual": {
+              "visualType": "slicer",
+              "projections": {
+                "Values": [{ "queryRef": "stock.size", "active": true }]
+              },
+              "prototypeQuery": {
+                "Version": 2,
+                "From": [{ "Name": "s", "Entity": "stock", "Type": 0 }],
+                "Select": [
+                  {
+                    "Column": {
+                      "Expression": { "SourceRef": { "Source": "s" } },
+                      "Property": "size"
+                    },
+                    "Name": "stock.size",
+                    "NativeReferenceName": "size"
+                  }
+                ]
+              },
+              "drillFilterOtherVisuals": true,
+              "objects": {
+                "data": [
+                  {
+                    "properties": {
+                      "mode": {
+                        "expr": { "Literal": { "Value": "\"Dropdown\"" } }
+                      }
+                    }
+                  }
+                ],
+                "general": [{ "properties": {} }],
+                "header": [
+                  {
+                    "properties": {
+                      "text": {
+                        "expr": { "Literal": { "Value": "\"Size Filter\"" } }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "filters": [],
+          "height": 65.59,
+          "width": 199.75,
+          "x": 853.66,
+          "y": 9.93,
+          "z": 9000.0
+        },
+        {
+          "config": {
+            "name": "53741aaa598dc7bae30e",
+            "layouts": [
+              {
+                "id": 0,
+                "position": {
+                  "x": 373.1024844720496,
+                  "y": 255.3975155279503,
+                  "z": 2000,
+                  "width": 530,
+                  "height": 215,
+                  "tabOrder": 2000
+                }
+              },
+              {
+                "id": 1,
+                "position": {
+                  "x": 0,
+                  "y": 629,
+                  "z": 4000,
+                  "width": 324,
+                  "height": 180,
+                  "tabOrder": 2000
+                }
+              }
+            ],
+            "singleVisual": {
+              "visualType": "lineChart",
+              "projections": {
+                "Category": [
+                  {
+                    "queryRef": "Dates.Date Hierarchy.Day of Month",
+                    "active": true
+                  }
+                ],
+                "Y": [{ "queryRef": "_Measures.Total Sales" }]
+              },
+              "prototypeQuery": {
+                "Version": 2,
+                "From": [
+                  { "Name": "d", "Entity": "Dates", "Type": 0 },
+                  { "Name": "_", "Entity": "_Measures", "Type": 0 }
+                ],
+                "Select": [
+                  {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": { "SourceRef": { "Source": "d" } },
+                          "Hierarchy": "Date Hierarchy"
+                        }
+                      },
+                      "Level": "Day of Month"
+                    },
+                    "Name": "Dates.Date Hierarchy.Day of Month",
+                    "NativeReferenceName": "Date Hierarchy Day of Month"
+                  },
+                  {
+                    "Measure": {
+                      "Expression": { "SourceRef": { "Source": "_" } },
+                      "Property": "Total Sales"
+                    },
+                    "Name": "_Measures.Total Sales",
+                    "NativeReferenceName": "Total Sales"
+                  }
+                ],
+                "OrderBy": [
+                  {
+                    "Direction": 1,
+                    "Expression": {
+                      "HierarchyLevel": {
+                        "Expression": {
+                          "Hierarchy": {
+                            "Expression": { "SourceRef": { "Source": "d" } },
+                            "Hierarchy": "Date Hierarchy"
+                          }
+                        },
+                        "Level": "Day of Month"
+                      }
+                    }
+                  }
+                ]
+              },
+              "drillFilterOtherVisuals": true,
+              "objects": {
+                "categoryAxis": [
+                  {
+                    "properties": {
+                      "showAxisTitle": {
+                        "expr": { "Literal": { "Value": "false" } }
+                      },
+                      "concatenateLabels": {
+                        "expr": { "Literal": { "Value": "false" } }
+                      },
+                      "axisType": {
+                        "expr": { "Literal": { "Value": "\"Categorical\"" } }
+                      }
+                    }
+                  }
+                ],
+                "valueAxis": [
+                  {
+                    "properties": {
+                      "showAxisTitle": {
+                        "expr": { "Literal": { "Value": "false" } }
+                      },
+                      "show": { "expr": { "Literal": { "Value": "true" } } },
+                      "labelDisplayUnits": {
+                        "expr": { "Literal": { "Value": "1000D" } }
+                      }
+                    }
+                  }
+                ],
+                "labels": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } }
+                    }
+                  }
+                ],
+                "layout": [{ "properties": {} }],
+                "legend": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } }
+                    }
+                  }
+                ],
+                "lineStyles": [
+                  {
+                    "properties": {
+                      "lineChartType": {
+                        "expr": { "Literal": { "Value": "\"smooth\"" } }
+                      }
+                    }
+                  }
+                ]
+              },
+              "vcObjects": {
+                "title": [
+                  {
+                    "properties": {
+                      "text": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "\"Current Month Sales (Ksh)\""
+                          }
+                        }
+                      },
+                      "alignment": {
+                        "expr": { "Literal": { "Value": "\"center\"" } }
+                      }
+                    }
+                  }
+                ],
+                "border": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "true" } } },
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": { "ColorId": 0, "Percent": 0 }
+                            }
+                          }
+                        }
+                      },
+                      "radius": { "expr": { "Literal": { "Value": "10D" } } }
+                    }
+                  }
+                ],
+                "dropShadow": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "true" } } },
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": 0,
+                                "Percent": -0.1
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "preset": {
+                        "expr": { "Literal": { "Value": "\"Center\"" } }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "filters": [
+            {
+              "name": "368da40f109ec5c05113",
+              "expression": {
+                "Column": {
+                  "Expression": { "SourceRef": { "Entity": "Dates" } },
+                  "Property": "CurrMonthOffset"
+                }
+              },
+              "filter": {
+                "Version": 2,
+                "From": [{ "Name": "d", "Entity": "Dates", "Type": 0 }],
+                "Where": [
+                  {
+                    "Condition": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": { "SourceRef": { "Source": "d" } },
+                              "Property": "CurrMonthOffset"
+                            }
+                          }
+                        ],
+                        "Values": [[{ "Literal": { "Value": "0L" } }]]
+                      }
+                    }
+                  }
+                ]
+              },
+              "type": "Categorical",
+              "howCreated": 1,
+              "objects": {}
+            }
+          ],
+          "height": 215.0,
+          "width": 530.0,
+          "x": 373.1,
+          "y": 255.4,
+          "z": 2000.0
+        },
+        {
+          "config": {
+            "name": "55a86309c290d04a25a0",
+            "layouts": [
+              {
+                "id": 0,
+                "position": {
+                  "height": 158.01242236024842,
+                  "width": 618.1366459627329,
+                  "x": 644.9689440993789,
+                  "y": 85.45962732919254,
+                  "z": 12000,
+                  "tabOrder": 12000
+                }
+              }
+            ],
+            "singleVisualGroup": { "displayName": "Group 11", "groupMode": 0 }
+          },
+          "height": 158.01,
+          "width": 618.14,
+          "x": 644.97,
+          "y": 85.46,
+          "z": 12000.0
+        },
+        {
+          "config": {
+            "name": "587e1d13820d916dd3b3",
+            "layouts": [
+              {
+                "id": 0,
+                "position": {
+                  "height": 80.49689440993788,
+                  "width": 199.75155279503105,
+                  "x": 0,
+                  "y": 0,
+                  "z": 1000,
+                  "tabOrder": 0
+                }
+              }
+            ],
+            "singleVisual": {
+              "visualType": "lineChart",
+              "projections": {
+                "Category": [
+                  { "queryRef": "Dates.Week & Year", "active": true }
+                ],
+                "Y": [{ "queryRef": "_Measures.Total Margin" }]
+              },
+              "prototypeQuery": {
+                "Version": 2,
+                "From": [
+                  { "Name": "d", "Entity": "Dates", "Type": 0 },
+                  { "Name": "_", "Entity": "_Measures", "Type": 0 }
+                ],
+                "Select": [
+                  {
+                    "Column": {
+                      "Expression": { "SourceRef": { "Source": "d" } },
+                      "Property": "Week & Year"
+                    },
+                    "Name": "Dates.Week & Year",
+                    "NativeReferenceName": "Week & Year"
+                  },
+                  {
+                    "Measure": {
+                      "Expression": { "SourceRef": { "Source": "_" } },
+                      "Property": "Total Margin"
+                    },
+                    "Name": "_Measures.Total Margin",
+                    "NativeReferenceName": "Total Margin"
+                  }
+                ],
+                "OrderBy": [
+                  {
+                    "Direction": 1,
+                    "Expression": {
+                      "Column": {
+                        "Expression": { "SourceRef": { "Source": "d" } },
+                        "Property": "Week & Year"
+                      }
+                    }
+                  }
+                ]
+              },
+              "drillFilterOtherVisuals": true,
+              "objects": {
+                "categoryAxis": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } }
+                    }
+                  }
+                ],
+                "valueAxis": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } },
+                      "showAxisTitle": {
+                        "expr": { "Literal": { "Value": "false" } }
+                      }
+                    }
+                  }
+                ],
+                "lineStyles": [
+                  {
+                    "properties": {
+                      "lineChartType": {
+                        "expr": { "Literal": { "Value": "\"smooth\"" } }
+                      }
+                    }
+                  }
+                ]
+              },
+              "vcObjects": {
+                "title": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } }
+                    }
+                  }
+                ],
+                "background": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } }
+                    }
+                  }
+                ],
+                "visualHeader": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } }
+                    }
+                  }
+                ]
+              }
+            },
+            "parentGroupName": "890143b9434d83ad5086"
+          },
+          "filters": [],
+          "height": 80.5,
+          "width": 199.75,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1000.0
+        },
+        {
+          "config": {
+            "name": "5aa2eef3de83c04ea24a",
+            "layouts": [
+              {
+                "id": 0,
+                "position": {
+                  "x": 644.9689440993789,
+                  "y": 9.93167701863354,
+                  "z": 8000,
+                  "width": 198.75776397515526,
+                  "height": 65.59006211180123,
+                  "tabOrder": 8000
+                }
+              }
+            ],
+            "singleVisual": {
+              "visualType": "slicer",
+              "projections": {
+                "Values": [
+                  {
+                    "queryRef": "Dates.Date Hierarchy.Month Name",
+                    "active": true
+                  }
+                ]
+              },
+              "prototypeQuery": {
+                "Version": 2,
+                "From": [{ "Name": "d", "Entity": "Dates", "Type": 0 }],
+                "Select": [
+                  {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": { "SourceRef": { "Source": "d" } },
+                          "Hierarchy": "Date Hierarchy"
+                        }
+                      },
+                      "Level": "Month Name"
+                    },
+                    "Name": "Dates.Date Hierarchy.Month Name",
+                    "NativeReferenceName": "Date Hierarchy Month Name"
+                  }
+                ]
+              },
+              "drillFilterOtherVisuals": true,
+              "objects": {
+                "data": [
+                  {
+                    "properties": {
+                      "mode": {
+                        "expr": { "Literal": { "Value": "\"Dropdown\"" } }
+                      }
+                    }
+                  }
+                ],
+                "general": [{ "properties": {} }],
+                "header": [
+                  {
+                    "properties": {
+                      "text": {
+                        "expr": { "Literal": { "Value": "\"Month Filter\"" } }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "filters": [],
+          "height": 65.59,
+          "width": 198.76,
+          "x": 644.97,
+          "y": 9.93,
+          "z": 8000.0
+        },
+        {
+          "config": {
+            "name": "63d5649e108a7e18a468",
+            "layouts": [
+              {
+                "id": 0,
+                "position": {
+                  "height": 117.26708074534159,
+                  "width": 199.75776397515529,
+                  "x": 199.7453416149068,
+                  "y": 0,
+                  "z": 17000,
+                  "tabOrder": 0
+                }
+              }
+            ],
+            "singleVisualGroup": { "displayName": "Group 1", "groupMode": 0 },
+            "parentGroupName": "0e777df0a0199a5e5e69"
+          },
+          "height": 117.27,
+          "width": 199.76,
+          "x": 199.75,
+          "y": 0.0,
+          "z": 17000.0
+        },
+        {
+          "config": {
+            "name": "66913abf352ad010a6cb",
+            "layouts": [
+              {
+                "id": 0,
+                "position": {
+                  "height": 35.77639751552795,
+                  "width": 126.21118012422359,
+                  "x": 0,
+                  "y": 0,
+                  "z": 6000,
+                  "tabOrder": 1000
+                }
+              },
+              {
+                "id": 1,
+                "position": {
+                  "x": 171,
+                  "y": 79,
+                  "z": 13000,
+                  "width": 145,
+                  "height": 30,
+                  "tabOrder": 12000
+                }
+              }
+            ],
+            "singleVisual": {
+              "visualType": "textbox",
+              "drillFilterOtherVisuals": true,
+              "objects": {
+                "general": [
+                  {
+                    "properties": {
+                      "paragraphs": [
+                        {
+                          "textRuns": [
+                            {
+                              "value": "Sales Margin",
+                              "textStyle": {
+                                "fontFamily": "Trebuchet MS",
+                                "fontSize": "14pt"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              "vcObjects": {
+                "background": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } }
+                    }
+                  }
+                ]
+              }
+            },
+            "parentGroupName": "b614c180711e52d60820"
+          },
+          "filters": [],
+          "height": 35.78,
+          "width": 126.21,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 6000.0
+        },
+        {
+          "config": {
+            "name": "754b28f63300937a8061",
+            "layouts": [
+              {
+                "id": 0,
+                "position": {
+                  "height": 158.01242236024842,
+                  "width": 618.1366459627328,
+                  "x": 12.919254658385093,
+                  "y": 85.45962732919254,
+                  "z": 11000,
+                  "tabOrder": 11000
+                }
+              }
+            ],
+            "singleVisualGroup": { "displayName": "Group 10", "groupMode": 0 }
+          },
+          "height": 158.01,
+          "width": 618.14,
+          "x": 12.92,
+          "y": 85.46,
+          "z": 11000.0
+        },
+        {
+          "config": {
+            "name": "787c8a3561bd44ddd828",
+            "layouts": [
+              {
+                "id": 0,
+                "position": {
+                  "height": 116.26087028406701,
+                  "width": 591.3043550146848,
+                  "x": 18.87577639751555,
+                  "y": 18.894409219038593,
+                  "z": 12000,
+                  "tabOrder": 1000
+                }
+              }
+            ],
+            "singleVisualGroup": { "displayName": "Group 9", "groupMode": 0 },
+            "parentGroupName": "55a86309c290d04a25a0"
+          },
+          "height": 116.26,
+          "width": 591.3,
+          "x": 18.88,
+          "y": 18.89,
+          "z": 12000.0
+        },
+        {
+          "config": {
+            "name": "79e419b24200c253db51",
+            "layouts": [
+              {
+                "id": 0,
+                "position": {
+                  "height": 113.2919254658385,
+                  "width": 199.7515527950311,
+                  "x": 191.80124247565368,
+                  "y": 0.9875781189815448,
+                  "z": 1000,
+                  "tabOrder": 1000
+                }
+              }
+            ],
+            "singleVisualGroup": { "displayName": "Group 7", "groupMode": 0 },
+            "parentGroupName": "787c8a3561bd44ddd828"
+          },
+          "height": 113.29,
+          "width": 199.75,
+          "x": 191.8,
+          "y": 0.99,
+          "z": 1000.0
+        },
+        {
+          "config": {
+            "name": "7f3a43aed5e6129b42a7",
+            "layouts": [
+              {
+                "id": 0,
+                "position": {
+                  "height": 80.49689440993788,
+                  "width": 199.75155279503105,
+                  "x": 0,
+                  "y": 0,
+                  "z": 0,
+                  "tabOrder": 0
+                }
+              }
+            ],
+            "singleVisual": {
+              "visualType": "lineChart",
+              "projections": {
+                "Category": [
+                  { "queryRef": "Dates.Month Name", "active": true }
+                ],
+                "Y": [{ "queryRef": "_Measures.MTD Margins" }]
+              },
+              "prototypeQuery": {
+                "Version": 2,
+                "From": [
+                  { "Name": "d", "Entity": "Dates", "Type": 0 },
+                  { "Name": "_", "Entity": "_Measures", "Type": 0 }
+                ],
+                "Select": [
+                  {
+                    "Column": {
+                      "Expression": { "SourceRef": { "Source": "d" } },
+                      "Property": "Month Name"
+                    },
+                    "Name": "Dates.Month Name",
+                    "NativeReferenceName": "Month Name"
+                  },
+                  {
+                    "Measure": {
+                      "Expression": { "SourceRef": { "Source": "_" } },
+                      "Property": "MTD Margins"
+                    },
+                    "Name": "_Measures.MTD Margins",
+                    "NativeReferenceName": "MTD Margins"
+                  }
+                ],
+                "OrderBy": [
+                  {
+                    "Direction": 1,
+                    "Expression": {
+                      "Column": {
+                        "Expression": { "SourceRef": { "Source": "d" } },
+                        "Property": "Month Name"
+                      }
+                    }
+                  }
+                ]
+              },
+              "drillFilterOtherVisuals": true,
+              "objects": {
+                "categoryAxis": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } }
+                    }
+                  }
+                ],
+                "valueAxis": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } },
+                      "showAxisTitle": {
+                        "expr": { "Literal": { "Value": "false" } }
+                      }
+                    }
+                  }
+                ],
+                "lineStyles": [
+                  {
+                    "properties": {
+                      "lineChartType": {
+                        "expr": { "Literal": { "Value": "\"smooth\"" } }
+                      }
+                    }
+                  }
+                ],
+                "labels": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } },
+                      "fontSize": { "expr": { "Literal": { "Value": "8D" } } },
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": { "ColorId": 2, "Percent": 0.4 }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "properties": {
+                      "dynamicLabelValue": {
+                        "expr": {
+                          "Measure": {
+                            "Expression": {
+                              "SourceRef": { "Entity": "_Measures" }
+                            },
+                            "Property": "MTD Sales"
+                          }
+                        }
+                      }
+                    },
+                    "selector": {
+                      "data": [{ "dataViewWildcard": { "matchingOption": 1 } }],
+                      "highlightMatching": 1
+                    }
+                  }
+                ]
+              },
+              "vcObjects": {
+                "title": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } }
+                    }
+                  }
+                ],
+                "background": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } }
+                    }
+                  }
+                ],
+                "visualHeader": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } }
+                    }
+                  }
+                ]
+              }
+            },
+            "parentGroupName": "79e419b24200c253db51"
+          },
+          "filters": [],
+          "height": 80.5,
+          "width": 199.75,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        {
+          "config": {
+            "name": "858295a9bb1dced07a0c",
+            "layouts": [
+              {
+                "id": 0,
+                "position": {
+                  "height": 158.01242236024842,
+                  "width": 618.1366459627328,
+                  "x": 0,
+                  "y": 0,
+                  "z": 0,
+                  "tabOrder": 3000
+                }
+              },
+              {
+                "id": 1,
+                "position": {
+                  "x": 164,
+                  "y": 73,
+                  "z": 0,
+                  "width": 160,
+                  "height": 127,
+                  "tabOrder": 14000
+                }
+              }
+            ],
+            "singleVisual": {
+              "visualType": "shape",
+              "drillFilterOtherVisuals": true,
+              "objects": {
+                "shape": [
+                  {
+                    "properties": {
+                      "tileShape": {
+                        "expr": {
+                          "Literal": { "Value": "\"rectangleRounded\"" }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "rotation": [
+                  {
+                    "properties": {
+                      "shapeAngle": { "expr": { "Literal": { "Value": "0L" } } }
+                    }
+                  }
+                ],
+                "fill": [
+                  {
+                    "properties": {
+                      "fillColor": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": { "ColorId": 0, "Percent": 0 }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "selector": { "id": "default" }
+                  },
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } }
+                    }
+                  }
+                ],
+                "outline": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } }
+                    }
+                  }
+                ]
+              },
+              "vcObjects": {
+                "background": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "true" } } }
+                    }
+                  }
+                ],
+                "border": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "true" } } },
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": 0,
+                                "Percent": -0.1
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "radius": { "expr": { "Literal": { "Value": "10D" } } }
+                    }
+                  }
+                ],
+                "dropShadow": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "true" } } },
+                      "preset": {
+                        "expr": { "Literal": { "Value": "\"Center\"" } }
+                      },
+                      "angle": { "expr": { "Literal": { "Value": "0L" } } },
+                      "shadowDistance": {
+                        "expr": { "Literal": { "Value": "0L" } }
+                      },
+                      "shadowBlur": {
+                        "expr": { "Literal": { "Value": "15L" } }
+                      },
+                      "shadowSpread": {
+                        "expr": { "Literal": { "Value": "3L" } }
+                      },
+                      "transparency": {
+                        "expr": { "Literal": { "Value": "70L" } }
+                      },
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": 0,
+                                "Percent": -0.3
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            "parentGroupName": "55a86309c290d04a25a0",
+            "howCreated": "InsertVisualButton"
+          },
+          "filters": [],
+          "height": 158.01,
+          "width": 618.14,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        {
+          "config": {
+            "name": "85de1960c61de7b94cbd",
+            "layouts": [
+              {
+                "id": 0,
+                "position": {
+                  "x": 150.06211180124222,
+                  "y": 12.919254658385093,
+                  "z": 1000,
+                  "width": 447.20496894409933,
+                  "height": 59.627329192546576,
+                  "tabOrder": 1000
+                }
+              },
+              {
+                "id": 1,
+                "position": {
+                  "x": 106,
+                  "y": 12,
+                  "z": 3000,
+                  "width": 218,
+                  "height": 38,
+                  "tabOrder": 1000
+                }
+              }
+            ],
+            "singleVisual": {
+              "visualType": "textbox",
+              "drillFilterOtherVisuals": true,
+              "objects": {
+                "general": [
+                  {
+                    "properties": {
+                      "paragraphs": [
+                        {
+                          "textRuns": [
+                            {
+                              "value": "Sales Summary Report",
+                              "textStyle": {
+                                "fontWeight": "bold",
+                                "fontSize": "24pt",
+                                "color": "#d64550"
+                              }
+                            }
+                          ],
+                          "horizontalTextAlignment": "center"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "filters": [],
+          "height": 59.63,
+          "width": 447.2,
+          "x": 150.06,
+          "y": 12.92,
+          "z": 1000.0
+        },
+        {
+          "config": {
+            "name": "8735a3d81182a0e4a58d",
+            "layouts": [
+              {
+                "id": 0,
+                "position": {
+                  "x": 1063.3540372670807,
+                  "y": 9.93167701863354,
+                  "z": 10000,
+                  "width": 199.75155279503105,
+                  "height": 65.59006211180123,
+                  "tabOrder": 10000
+                }
+              }
+            ],
+            "singleVisual": {
+              "visualType": "slicer",
+              "projections": {
+                "Values": [{ "queryRef": "customers.name", "active": true }]
+              },
+              "prototypeQuery": {
+                "Version": 2,
+                "From": [{ "Name": "c", "Entity": "customers", "Type": 0 }],
+                "Select": [
+                  {
+                    "Column": {
+                      "Expression": { "SourceRef": { "Source": "c" } },
+                      "Property": "name"
+                    },
+                    "Name": "customers.name",
+                    "NativeReferenceName": "name"
+                  }
+                ]
+              },
+              "drillFilterOtherVisuals": true,
+              "objects": {
+                "data": [
+                  {
+                    "properties": {
+                      "mode": {
+                        "expr": { "Literal": { "Value": "\"Dropdown\"" } }
+                      }
+                    }
+                  }
+                ],
+                "general": [{ "properties": {} }],
+                "header": [
+                  {
+                    "properties": {
+                      "text": {
+                        "expr": {
+                          "Literal": { "Value": "\"Customer Filter\"" }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "filters": [],
+          "height": 65.59,
+          "width": 199.75,
+          "x": 1063.35,
+          "y": 9.93,
+          "z": 10000.0
+        },
+        {
+          "config": {
+            "name": "890143b9434d83ad5086",
+            "layouts": [
+              {
+                "id": 0,
+                "position": {
+                  "height": 114.28571428571429,
+                  "width": 199.7515527950311,
+                  "x": 391.5528022196537,
+                  "y": 0,
+                  "z": 2000,
+                  "tabOrder": 2000
+                }
+              }
+            ],
+            "singleVisualGroup": { "displayName": "Group 8", "groupMode": 0 },
+            "parentGroupName": "787c8a3561bd44ddd828"
+          },
+          "height": 114.29,
+          "width": 199.75,
+          "x": 391.55,
+          "y": 0.0,
+          "z": 2000.0
+        },
+        {
+          "config": {
+            "name": "9792606673a966a15da3",
+            "layouts": [
+              {
+                "id": 0,
+                "position": {
+                  "x": 12.925465838509316,
+                  "y": 481.9875776397515,
+                  "z": 4000,
+                  "width": 350,
+                  "height": 215,
+                  "tabOrder": 4000
+                }
+              },
+              {
+                "id": 1,
+                "position": {
+                  "x": 0,
+                  "y": 419,
+                  "z": 6000,
+                  "width": 324,
+                  "height": 199,
+                  "tabOrder": 4000
+                }
+              }
+            ],
+            "singleVisual": {
+              "visualType": "clusteredColumnChart",
+              "projections": {
+                "Y": [{ "queryRef": "_Measures.Total Sales" }],
+                "Category": [{ "queryRef": "Dates.DoW", "active": true }]
+              },
+              "prototypeQuery": {
+                "Version": 2,
+                "From": [
+                  { "Name": "_", "Entity": "_Measures", "Type": 0 },
+                  { "Name": "d", "Entity": "Dates", "Type": 0 }
+                ],
+                "Select": [
+                  {
+                    "Measure": {
+                      "Expression": { "SourceRef": { "Source": "_" } },
+                      "Property": "Total Sales"
+                    },
+                    "Name": "_Measures.Total Sales",
+                    "NativeReferenceName": "Total Sales"
+                  },
+                  {
+                    "Column": {
+                      "Expression": { "SourceRef": { "Source": "d" } },
+                      "Property": "DoW"
+                    },
+                    "Name": "Dates.DoW",
+                    "NativeReferenceName": "DoW"
+                  }
+                ],
+                "OrderBy": [
+                  {
+                    "Direction": 1,
+                    "Expression": {
+                      "Column": {
+                        "Expression": { "SourceRef": { "Source": "d" } },
+                        "Property": "DoW"
+                      }
+                    }
+                  }
+                ]
+              },
+              "drillFilterOtherVisuals": true,
+              "objects": {
+                "layout": [
+                  {
+                    "properties": {
+                      "clusteredGapOverlaps": {
+                        "expr": { "Literal": { "Value": "true" } }
+                      },
+                      "clusteredGapSize": {
+                        "expr": { "Literal": { "Value": "30D" } }
+                      },
+                      "clusteredGapOverlapReverse": {
+                        "expr": { "Literal": { "Value": "true" } }
+                      }
+                    }
+                  }
+                ],
+                "labels": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "true" } } }
+                    }
+                  },
+                  {
+                    "properties": {
+                      "showSeries": {
+                        "expr": { "Literal": { "Value": "true" } }
+                      },
+                      "labelPosition": {
+                        "expr": { "Literal": { "Value": "\"OutsideEnd\"" } }
+                      }
+                    },
+                    "selector": { "metadata": "_Measures.Total Sales" }
+                  }
+                ],
+                "legend": [
+                  {
+                    "properties": {
+                      "showGradientLegend": {
+                        "expr": { "Literal": { "Value": "false" } }
+                      },
+                      "show": { "expr": { "Literal": { "Value": "false" } } }
+                    }
+                  }
+                ],
+                "valueAxis": [
+                  {
+                    "properties": {
+                      "showAxisTitle": {
+                        "expr": { "Literal": { "Value": "false" } }
+                      },
+                      "labelDisplayUnits": {
+                        "expr": { "Literal": { "Value": "1000D" } }
+                      },
+                      "show": { "expr": { "Literal": { "Value": "false" } } }
+                    }
+                  }
+                ],
+                "categoryAxis": [
+                  {
+                    "properties": {
+                      "axisType": {
+                        "expr": { "Literal": { "Value": "\"Categorical\"" } }
+                      },
+                      "showAxisTitle": {
+                        "expr": { "Literal": { "Value": "false" } }
+                      }
+                    }
+                  }
+                ]
+              },
+              "vcObjects": {
+                "title": [
+                  {
+                    "properties": {
+                      "text": {
+                        "expr": {
+                          "Literal": { "Value": "\"Prev Week Sales\"" }
+                        }
+                      },
+                      "alignment": {
+                        "expr": { "Literal": { "Value": "\"center\"" } }
+                      }
+                    }
+                  }
+                ],
+                "dropShadow": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "true" } } },
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": 0,
+                                "Percent": -0.2
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "preset": {
+                        "expr": { "Literal": { "Value": "\"Center\"" } }
+                      },
+                      "angle": { "expr": { "Literal": { "Value": "0L" } } },
+                      "shadowDistance": {
+                        "expr": { "Literal": { "Value": "0L" } }
+                      },
+                      "shadowBlur": {
+                        "expr": { "Literal": { "Value": "15L" } }
+                      },
+                      "shadowSpread": {
+                        "expr": { "Literal": { "Value": "3L" } }
+                      },
+                      "transparency": {
+                        "expr": { "Literal": { "Value": "70L" } }
+                      }
+                    }
+                  }
+                ],
+                "border": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "true" } } },
+                      "radius": { "expr": { "Literal": { "Value": "10D" } } },
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": { "ColorId": 0, "Percent": 0 }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "filters": [
+            {
+              "name": "18cd1baeb9b2b591593e",
+              "expression": {
+                "Column": {
+                  "Expression": { "SourceRef": { "Entity": "Dates" } },
+                  "Property": "CurrWeekOffset"
+                }
+              },
+              "filter": {
+                "Version": 2,
+                "From": [{ "Name": "d", "Entity": "Dates", "Type": 0 }],
+                "Where": [
+                  {
+                    "Condition": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": { "SourceRef": { "Source": "d" } },
+                              "Property": "CurrWeekOffset"
+                            }
+                          }
+                        ],
+                        "Values": [[{ "Literal": { "Value": "-1L" } }]]
+                      }
+                    }
+                  }
+                ]
+              },
+              "type": "Categorical",
+              "howCreated": 1,
+              "objects": {}
+            }
+          ],
+          "height": 215.0,
+          "width": 350.0,
+          "x": 12.93,
+          "y": 481.99,
+          "z": 4000.0
+        },
+        {
+          "config": {
+            "name": "981d31ce71dda6d3dcec",
+            "layouts": [
+              {
+                "id": 0,
+                "position": {
+                  "x": 12.919254658385093,
+                  "y": 255.3975155279503,
+                  "z": 3000,
+                  "width": 350,
+                  "height": 215,
+                  "tabOrder": 3000
+                }
+              },
+              {
+                "id": 1,
+                "position": {
+                  "x": 0,
+                  "y": 211,
+                  "z": 5000,
+                  "width": 324,
+                  "height": 199,
+                  "tabOrder": 3000
+                }
+              }
+            ],
+            "singleVisual": {
+              "visualType": "clusteredColumnChart",
+              "projections": {
+                "Y": [{ "queryRef": "_Measures.Total Sales" }],
+                "Category": [{ "queryRef": "Dates.DoW", "active": true }]
+              },
+              "prototypeQuery": {
+                "Version": 2,
+                "From": [
+                  { "Name": "_", "Entity": "_Measures", "Type": 0 },
+                  { "Name": "d", "Entity": "Dates", "Type": 0 }
+                ],
+                "Select": [
+                  {
+                    "Measure": {
+                      "Expression": { "SourceRef": { "Source": "_" } },
+                      "Property": "Total Sales"
+                    },
+                    "Name": "_Measures.Total Sales",
+                    "NativeReferenceName": "Total Sales"
+                  },
+                  {
+                    "Column": {
+                      "Expression": { "SourceRef": { "Source": "d" } },
+                      "Property": "DoW"
+                    },
+                    "Name": "Dates.DoW",
+                    "NativeReferenceName": "DoW"
+                  }
+                ],
+                "OrderBy": [
+                  {
+                    "Direction": 1,
+                    "Expression": {
+                      "Column": {
+                        "Expression": { "SourceRef": { "Source": "d" } },
+                        "Property": "DoW"
+                      }
+                    }
+                  }
+                ]
+              },
+              "drillFilterOtherVisuals": true,
+              "objects": {
+                "layout": [
+                  {
+                    "properties": {
+                      "clusteredGapOverlaps": {
+                        "expr": { "Literal": { "Value": "true" } }
+                      },
+                      "clusteredGapSize": {
+                        "expr": { "Literal": { "Value": "30D" } }
+                      },
+                      "clusteredGapOverlapReverse": {
+                        "expr": { "Literal": { "Value": "true" } }
+                      }
+                    }
+                  }
+                ],
+                "labels": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "true" } } }
+                    }
+                  },
+                  {
+                    "properties": {
+                      "showSeries": {
+                        "expr": { "Literal": { "Value": "true" } }
+                      },
+                      "labelPosition": {
+                        "expr": { "Literal": { "Value": "\"OutsideEnd\"" } }
+                      }
+                    },
+                    "selector": { "metadata": "_Measures.Total Sales" }
+                  }
+                ],
+                "legend": [
+                  {
+                    "properties": {
+                      "showGradientLegend": {
+                        "expr": { "Literal": { "Value": "false" } }
+                      },
+                      "show": { "expr": { "Literal": { "Value": "false" } } }
+                    }
+                  }
+                ],
+                "valueAxis": [
+                  {
+                    "properties": {
+                      "showAxisTitle": {
+                        "expr": { "Literal": { "Value": "false" } }
+                      },
+                      "labelDisplayUnits": {
+                        "expr": { "Literal": { "Value": "1000D" } }
+                      },
+                      "show": { "expr": { "Literal": { "Value": "false" } } }
+                    }
+                  }
+                ],
+                "categoryAxis": [
+                  {
+                    "properties": {
+                      "axisType": {
+                        "expr": { "Literal": { "Value": "\"Categorical\"" } }
+                      },
+                      "showAxisTitle": {
+                        "expr": { "Literal": { "Value": "false" } }
+                      }
+                    }
+                  }
+                ]
+              },
+              "vcObjects": {
+                "title": [
+                  {
+                    "properties": {
+                      "text": {
+                        "expr": {
+                          "Literal": { "Value": "\"Current Week Sales\"" }
+                        }
+                      },
+                      "alignment": {
+                        "expr": { "Literal": { "Value": "\"center\"" } }
+                      }
+                    }
+                  }
+                ],
+                "border": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "true" } } },
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": { "ColorId": 0, "Percent": 0 }
+                            }
+                          }
+                        }
+                      },
+                      "radius": { "expr": { "Literal": { "Value": "10D" } } }
+                    }
+                  }
+                ],
+                "dropShadow": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "true" } } },
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": 0,
+                                "Percent": -0.1
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "preset": {
+                        "expr": { "Literal": { "Value": "\"Center\"" } }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "filters": [
+            {
+              "name": "18cd1baeb9b2b591593e",
+              "expression": {
+                "Column": {
+                  "Expression": { "SourceRef": { "Entity": "Dates" } },
+                  "Property": "CurrWeekOffset"
+                }
+              },
+              "filter": {
+                "Version": 2,
+                "From": [{ "Name": "d", "Entity": "Dates", "Type": 0 }],
+                "Where": [
+                  {
+                    "Condition": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": { "SourceRef": { "Source": "d" } },
+                              "Property": "CurrWeekOffset"
+                            }
+                          }
+                        ],
+                        "Values": [[{ "Literal": { "Value": "0L" } }]]
+                      }
+                    }
+                  }
+                ]
+              },
+              "type": "Categorical",
+              "howCreated": 1,
+              "objects": {}
+            }
+          ],
+          "height": 215.0,
+          "width": 350.0,
+          "x": 12.92,
+          "y": 255.4,
+          "z": 3000.0
+        },
+        {
+          "config": {
+            "name": "a11a689c766b54bd8e19",
+            "layouts": [
+              {
+                "id": 0,
+                "position": {
+                  "height": 80.49689440993788,
+                  "width": 199.75155279503105,
+                  "x": 0,
+                  "y": 0,
+                  "z": 1000,
+                  "tabOrder": 0
+                }
+              }
+            ],
+            "singleVisual": {
+              "visualType": "lineChart",
+              "projections": {
+                "Category": [
+                  { "queryRef": "Dates.Month Name", "active": true }
+                ],
+                "Y": [{ "queryRef": "_Measures.MTD Sales" }]
+              },
+              "prototypeQuery": {
+                "Version": 2,
+                "From": [
+                  { "Name": "d", "Entity": "Dates", "Type": 0 },
+                  { "Name": "_", "Entity": "_Measures", "Type": 0 }
+                ],
+                "Select": [
+                  {
+                    "Column": {
+                      "Expression": { "SourceRef": { "Source": "d" } },
+                      "Property": "Month Name"
+                    },
+                    "Name": "Dates.Month Name",
+                    "NativeReferenceName": "Month Name"
+                  },
+                  {
+                    "Measure": {
+                      "Expression": { "SourceRef": { "Source": "_" } },
+                      "Property": "MTD Sales"
+                    },
+                    "Name": "_Measures.MTD Sales",
+                    "NativeReferenceName": "MTD Sales"
+                  }
+                ],
+                "OrderBy": [
+                  {
+                    "Direction": 1,
+                    "Expression": {
+                      "Column": {
+                        "Expression": { "SourceRef": { "Source": "d" } },
+                        "Property": "Month Name"
+                      }
+                    }
+                  }
+                ]
+              },
+              "drillFilterOtherVisuals": true,
+              "objects": {
+                "categoryAxis": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } }
+                    }
+                  }
+                ],
+                "valueAxis": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } },
+                      "showAxisTitle": {
+                        "expr": { "Literal": { "Value": "false" } }
+                      }
+                    }
+                  }
+                ],
+                "lineStyles": [
+                  {
+                    "properties": {
+                      "lineChartType": {
+                        "expr": { "Literal": { "Value": "\"smooth\"" } }
+                      }
+                    }
+                  }
+                ],
+                "labels": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } },
+                      "fontSize": { "expr": { "Literal": { "Value": "8D" } } },
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": { "ColorId": 2, "Percent": 0.4 }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "properties": {
+                      "dynamicLabelValue": {
+                        "expr": {
+                          "Measure": {
+                            "Expression": {
+                              "SourceRef": { "Entity": "_Measures" }
+                            },
+                            "Property": "MTD Sales"
+                          }
+                        }
+                      }
+                    },
+                    "selector": {
+                      "data": [{ "dataViewWildcard": { "matchingOption": 1 } }],
+                      "highlightMatching": 1
+                    }
+                  }
+                ]
+              },
+              "vcObjects": {
+                "title": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } }
+                    }
+                  }
+                ],
+                "background": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } }
+                    }
+                  }
+                ],
+                "visualHeader": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } }
+                    }
+                  }
+                ]
+              }
+            },
+            "parentGroupName": "e675f2c34e64a30e6050"
+          },
+          "filters": [],
+          "height": 80.5,
+          "width": 199.75,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1000.0
+        },
+        {
+          "config": {
+            "name": "a170f8b00c0b3a68ac54",
+            "layouts": [
+              {
+                "id": 0,
+                "position": {
+                  "height": 127.20496894409936,
+                  "width": 11.925465838509316,
+                  "x": 383.60248447204964,
+                  "y": 13.664596273291949,
+                  "z": 14000,
+                  "tabOrder": 0
+                }
+              }
+            ],
+            "singleVisual": {
+              "visualType": "shape",
+              "drillFilterOtherVisuals": true,
+              "objects": {
+                "shape": [
+                  {
+                    "properties": {
+                      "tileShape": {
+                        "expr": { "Literal": { "Value": "\"line\"" } }
+                      }
+                    }
+                  }
+                ],
+                "rotation": [
+                  {
+                    "properties": {
+                      "shapeAngle": {
+                        "expr": { "Literal": { "Value": "0L" } }
+                      },
+                      "angle": { "expr": { "Literal": { "Value": "90D" } } }
+                    }
+                  }
+                ],
+                "fill": [
+                  {
+                    "properties": {
+                      "fillColor": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": { "ColorId": 6, "Percent": 0.4 }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "selector": { "id": "default" }
+                  },
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } }
+                    }
+                  }
+                ],
+                "outline": [
+                  {
+                    "properties": {
+                      "lineColor": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": 0,
+                                "Percent": -0.1
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "transparency": {
+                        "expr": { "Literal": { "Value": "50D" } }
+                      }
+                    },
+                    "selector": { "id": "default" }
+                  }
+                ]
+              }
+            },
+            "parentGroupName": "754b28f63300937a8061",
+            "howCreated": "InsertVisualButton"
+          },
+          "filters": [],
+          "height": 127.2,
+          "width": 11.93,
+          "x": 383.6,
+          "y": 13.66,
+          "z": 14000.0
+        },
+        {
+          "config": {
+            "name": "a3e5c86b104aa6109e52",
+            "layouts": [
+              {
+                "id": 0,
+                "position": {
+                  "height": 29.813664596273288,
+                  "width": 199.75155279503105,
+                  "x": 0,
+                  "y": 87.4534161490683,
+                  "z": 8000,
+                  "tabOrder": 0
+                }
+              },
+              {
+                "id": 1,
+                "position": {
+                  "x": 7,
+                  "y": 171,
+                  "z": 18000,
+                  "width": 145,
+                  "height": 25,
+                  "tabOrder": 18000
+                }
+              }
+            ],
+            "singleVisual": {
+              "visualType": "card",
+              "projections": {
+                "Values": [{ "queryRef": "_Measures.WoW Text" }]
+              },
+              "prototypeQuery": {
+                "Version": 2,
+                "From": [{ "Name": "_", "Entity": "_Measures", "Type": 0 }],
+                "Select": [
+                  {
+                    "Measure": {
+                      "Expression": { "SourceRef": { "Source": "_" } },
+                      "Property": "WoW Text"
+                    },
+                    "Name": "_Measures.WoW Text",
+                    "NativeReferenceName": "WoW Text"
+                  }
+                ]
+              },
+              "drillFilterOtherVisuals": true,
+              "hasDefaultSort": true,
+              "objects": {
+                "categoryLabels": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } }
+                    }
+                  }
+                ],
+                "labels": [
+                  {
+                    "properties": {
+                      "fontSize": { "expr": { "Literal": { "Value": "12D" } } },
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "Conditional": {
+                                "Cases": [
+                                  {
+                                    "Condition": {
+                                      "Comparison": {
+                                        "ComparisonKind": 2,
+                                        "Left": {
+                                          "Measure": {
+                                            "Expression": {
+                                              "SourceRef": {
+                                                "Entity": "_Measures"
+                                              }
+                                            },
+                                            "Property": "WoW Sales"
+                                          }
+                                        },
+                                        "Right": {
+                                          "Literal": { "Value": "0D" }
+                                        }
+                                      }
+                                    },
+                                    "Value": {
+                                      "Literal": { "Value": "\"#01A655\"" }
+                                    }
+                                  },
+                                  {
+                                    "Condition": {
+                                      "Comparison": {
+                                        "ComparisonKind": 3,
+                                        "Left": {
+                                          "Measure": {
+                                            "Expression": {
+                                              "SourceRef": {
+                                                "Entity": "_Measures"
+                                              }
+                                            },
+                                            "Property": "WoW Sales"
+                                          }
+                                        },
+                                        "Right": {
+                                          "Literal": { "Value": "0D" }
+                                        }
+                                      }
+                                    },
+                                    "Value": {
+                                      "Literal": { "Value": "\"#D64550\"" }
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              "vcObjects": {
+                "padding": [
+                  {
+                    "properties": {
+                      "top": { "expr": { "Literal": { "Value": "0D" } } },
+                      "right": { "expr": { "Literal": { "Value": "0D" } } },
+                      "bottom": { "expr": { "Literal": { "Value": "0D" } } },
+                      "left": { "expr": { "Literal": { "Value": "0D" } } }
+                    }
+                  }
+                ]
+              }
+            },
+            "parentGroupName": "63d5649e108a7e18a468"
+          },
+          "filters": [],
+          "height": 29.81,
+          "width": 199.75,
+          "x": 0.0,
+          "y": 87.45,
+          "z": 8000.0
+        },
+        {
+          "config": {
+            "name": "aeb6f36aa3963b3bb176",
+            "layouts": [
+              {
+                "id": 0,
+                "position": {
+                  "height": 68.57142857142857,
+                  "width": 190,
+                  "x": 0,
+                  "y": 35.78260869565213,
+                  "z": 16000,
+                  "tabOrder": 1000
+                }
+              },
+              {
+                "id": 1,
+                "position": {
+                  "x": 7,
+                  "y": 105,
+                  "z": 14000,
+                  "width": 145,
+                  "height": 40,
+                  "tabOrder": 11000
+                }
+              }
+            ],
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "projections": {
+                "Data": [{ "queryRef": "_Measures.TTL Sales" }]
+              },
+              "prototypeQuery": {
+                "Version": 2,
+                "From": [{ "Name": "_", "Entity": "_Measures", "Type": 0 }],
+                "Select": [
+                  {
+                    "Measure": {
+                      "Expression": { "SourceRef": { "Source": "_" } },
+                      "Property": "TTL Sales"
+                    },
+                    "Name": "_Measures.TTL Sales",
+                    "NativeReferenceName": "TTL Sales"
+                  }
+                ],
+                "OrderBy": [
+                  {
+                    "Direction": 2,
+                    "Expression": {
+                      "Measure": {
+                        "Expression": { "SourceRef": { "Source": "_" } },
+                        "Property": "TTL Sales"
+                      }
+                    }
+                  }
+                ]
+              },
+              "drillFilterOtherVisuals": true,
+              "hasDefaultSort": true,
+              "objects": {
+                "label": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } },
+                      "fontSize": { "expr": { "Literal": { "Value": "16D" } } },
+                      "bold": { "expr": { "Literal": { "Value": "true" } } },
+                      "fontColor": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": { "ColorId": 9, "Percent": 0 }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "selector": { "id": "default" }
+                  }
+                ],
+                "outline": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } }
+                    },
+                    "selector": { "id": "default" }
+                  }
+                ],
+                "padding": [
+                  {
+                    "properties": {
+                      "paddingSelection": {
+                        "expr": { "Literal": { "Value": "\"Narrow\"" } }
+                      }
+                    },
+                    "selector": { "id": "default" }
+                  }
+                ],
+                "fillCustom": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } }
+                    }
+                  }
+                ],
+                "value": [
+                  {
+                    "properties": {
+                      "fontSize": { "expr": { "Literal": { "Value": "23D" } } }
+                    },
+                    "selector": { "id": "default" }
+                  },
+                  {
+                    "properties": {
+                      "labelDisplayUnits": {
+                        "expr": { "Literal": { "Value": "1D" } }
+                      }
+                    },
+                    "selector": { "metadata": "_Measures.TTL Sales" }
+                  }
+                ]
+              },
+              "vcObjects": {
+                "border": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } },
+                      "radius": { "expr": { "Literal": { "Value": "10D" } } },
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": 0,
+                                "Percent": -0.1
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "dropShadow": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } },
+                      "preset": {
+                        "expr": { "Literal": { "Value": "\"Center\"" } }
+                      },
+                      "angle": { "expr": { "Literal": { "Value": "0L" } } },
+                      "shadowDistance": {
+                        "expr": { "Literal": { "Value": "0L" } }
+                      },
+                      "shadowBlur": {
+                        "expr": { "Literal": { "Value": "15L" } }
+                      },
+                      "shadowSpread": {
+                        "expr": { "Literal": { "Value": "3L" } }
+                      },
+                      "transparency": {
+                        "expr": { "Literal": { "Value": "70L" } }
+                      },
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": 0,
+                                "Percent": -0.1
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "background": [
+                  {
+                    "properties": {
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": 0,
+                                "Percent": -0.2
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "show": { "expr": { "Literal": { "Value": "false" } } }
+                    }
+                  }
+                ],
+                "padding": [
+                  {
+                    "properties": {
+                      "top": { "expr": { "Literal": { "Value": "1D" } } },
+                      "bottom": { "expr": { "Literal": { "Value": "1D" } } }
+                    }
+                  }
+                ]
+              }
+            },
+            "parentGroupName": "f803fcf876e2d1d0b08e"
+          },
+          "filters": [],
+          "height": 68.57,
+          "width": 190.0,
+          "x": 0.0,
+          "y": 35.78,
+          "z": 16000.0
+        },
+        {
+          "config": {
+            "name": "b614c180711e52d60820",
+            "layouts": [
+              {
+                "id": 0,
+                "position": {
+                  "height": 104.3540372670807,
+                  "width": 190,
+                  "x": 0,
+                  "y": 11.90683301698631,
+                  "z": 0,
+                  "tabOrder": 0
+                }
+              }
+            ],
+            "singleVisualGroup": { "displayName": "Group 6", "groupMode": 0 },
+            "parentGroupName": "787c8a3561bd44ddd828"
+          },
+          "height": 104.35,
+          "width": 190.0,
+          "x": 0.0,
+          "y": 11.91,
+          "z": 0.0
+        },
+        {
+          "config": {
+            "name": "b94fb056ec026e00b915",
+            "layouts": [
+              {
+                "id": 0,
+                "position": {
+                  "height": 117.27329192546581,
+                  "width": 591.3105590062112,
+                  "x": 17.894409937878894,
+                  "y": 17.888198757754793,
+                  "z": 11000,
+                  "tabOrder": 2000
+                }
+              }
+            ],
+            "singleVisualGroup": {
+              "displayName": "Group 5",
+              "groupMode": 0,
+              "objects": {
+                "background": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } }
+                    }
+                  }
+                ]
+              }
+            },
+            "parentGroupName": "754b28f63300937a8061"
+          },
+          "height": 117.27,
+          "width": 591.31,
+          "x": 17.89,
+          "y": 17.89,
+          "z": 11000.0
+        },
+        {
+          "config": {
+            "name": "bb285a0e580d5204041b",
+            "layouts": [
+              {
+                "id": 0,
+                "position": {
+                  "height": 80.49689440993788,
+                  "width": 199.75155279503105,
+                  "x": 0.006211180124232385,
+                  "y": 0,
+                  "z": 0,
+                  "tabOrder": 1000
+                }
+              }
+            ],
+            "singleVisual": {
+              "visualType": "lineChart",
+              "projections": {
+                "Y": [{ "queryRef": "_Measures.Total Sales" }],
+                "Category": [
+                  { "queryRef": "Dates.Week & Year", "active": true }
+                ]
+              },
+              "prototypeQuery": {
+                "Version": 2,
+                "From": [
+                  { "Name": "_", "Entity": "_Measures", "Type": 0 },
+                  { "Name": "d", "Entity": "Dates", "Type": 0 }
+                ],
+                "Select": [
+                  {
+                    "Measure": {
+                      "Expression": { "SourceRef": { "Source": "_" } },
+                      "Property": "Total Sales"
+                    },
+                    "Name": "_Measures.Total Sales",
+                    "NativeReferenceName": "Total Sales"
+                  },
+                  {
+                    "Column": {
+                      "Expression": { "SourceRef": { "Source": "d" } },
+                      "Property": "Week & Year"
+                    },
+                    "Name": "Dates.Week & Year",
+                    "NativeReferenceName": "Week & Year"
+                  }
+                ],
+                "OrderBy": [
+                  {
+                    "Direction": 1,
+                    "Expression": {
+                      "Column": {
+                        "Expression": { "SourceRef": { "Source": "d" } },
+                        "Property": "Week & Year"
+                      }
+                    }
+                  }
+                ]
+              },
+              "drillFilterOtherVisuals": true,
+              "objects": {
+                "categoryAxis": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } }
+                    }
+                  }
+                ],
+                "valueAxis": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } },
+                      "showAxisTitle": {
+                        "expr": { "Literal": { "Value": "false" } }
+                      }
+                    }
+                  }
+                ],
+                "lineStyles": [
+                  {
+                    "properties": {
+                      "lineChartType": {
+                        "expr": { "Literal": { "Value": "\"smooth\"" } }
+                      }
+                    }
+                  }
+                ]
+              },
+              "vcObjects": {
+                "title": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } }
+                    }
+                  }
+                ],
+                "background": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } }
+                    }
+                  }
+                ],
+                "visualHeader": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } }
+                    }
+                  }
+                ]
+              }
+            },
+            "parentGroupName": "63d5649e108a7e18a468"
+          },
+          "filters": [],
+          "height": 80.5,
+          "width": 199.75,
+          "x": 0.01,
+          "y": 0.0,
+          "z": 0.0
+        },
+        {
+          "config": {
+            "name": "bd8630ba93a63750c96b",
+            "layouts": [
+              {
+                "id": 0,
+                "position": {
+                  "x": 373.26397515527947,
+                  "y": 482.32919254658384,
+                  "z": 5000,
+                  "width": 529.6894409937888,
+                  "height": 214.65838509316768,
+                  "tabOrder": 5000
+                }
+              },
+              {
+                "id": 1,
+                "position": {
+                  "x": 0,
+                  "y": 809,
+                  "z": 7000,
+                  "width": 324,
+                  "height": 180,
+                  "tabOrder": 5000
+                }
+              }
+            ],
+            "singleVisual": {
+              "visualType": "lineChart",
+              "projections": {
+                "Category": [
+                  {
+                    "queryRef": "Dates.Date Hierarchy.Day of Month",
+                    "active": true
+                  }
+                ],
+                "Y": [{ "queryRef": "_Measures.Total Sales" }]
+              },
+              "prototypeQuery": {
+                "Version": 2,
+                "From": [
+                  { "Name": "d", "Entity": "Dates", "Type": 0 },
+                  { "Name": "_", "Entity": "_Measures", "Type": 0 }
+                ],
+                "Select": [
+                  {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": { "SourceRef": { "Source": "d" } },
+                          "Hierarchy": "Date Hierarchy"
+                        }
+                      },
+                      "Level": "Day of Month"
+                    },
+                    "Name": "Dates.Date Hierarchy.Day of Month",
+                    "NativeReferenceName": "Date Hierarchy Day of Month"
+                  },
+                  {
+                    "Measure": {
+                      "Expression": { "SourceRef": { "Source": "_" } },
+                      "Property": "Total Sales"
+                    },
+                    "Name": "_Measures.Total Sales",
+                    "NativeReferenceName": "Total Sales"
+                  }
+                ],
+                "OrderBy": [
+                  {
+                    "Direction": 1,
+                    "Expression": {
+                      "HierarchyLevel": {
+                        "Expression": {
+                          "Hierarchy": {
+                            "Expression": { "SourceRef": { "Source": "d" } },
+                            "Hierarchy": "Date Hierarchy"
+                          }
+                        },
+                        "Level": "Day of Month"
+                      }
+                    }
+                  }
+                ]
+              },
+              "drillFilterOtherVisuals": true,
+              "objects": {
+                "categoryAxis": [
+                  {
+                    "properties": {
+                      "showAxisTitle": {
+                        "expr": { "Literal": { "Value": "false" } }
+                      },
+                      "concatenateLabels": {
+                        "expr": { "Literal": { "Value": "false" } }
+                      },
+                      "axisType": {
+                        "expr": { "Literal": { "Value": "\"Categorical\"" } }
+                      },
+                      "fontSize": { "expr": { "Literal": { "Value": "8D" } } }
+                    }
+                  }
+                ],
+                "valueAxis": [
+                  {
+                    "properties": {
+                      "showAxisTitle": {
+                        "expr": { "Literal": { "Value": "false" } }
+                      },
+                      "show": { "expr": { "Literal": { "Value": "true" } } },
+                      "labelDisplayUnits": {
+                        "expr": { "Literal": { "Value": "1000D" } }
+                      },
+                      "fontSize": { "expr": { "Literal": { "Value": "8D" } } }
+                    }
+                  }
+                ],
+                "labels": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } }
+                    }
+                  }
+                ],
+                "layout": [{ "properties": {} }],
+                "legend": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } }
+                    }
+                  }
+                ],
+                "lineStyles": [
+                  {
+                    "properties": {
+                      "lineChartType": {
+                        "expr": { "Literal": { "Value": "\"smooth\"" } }
+                      }
+                    }
+                  }
+                ]
+              },
+              "vcObjects": {
+                "title": [
+                  {
+                    "properties": {
+                      "text": {
+                        "expr": {
+                          "Literal": { "Value": "\"Prev Month Sales (Ksh)\"" }
+                        }
+                      },
+                      "alignment": {
+                        "expr": { "Literal": { "Value": "\"center\"" } }
+                      }
+                    }
+                  }
+                ],
+                "border": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "true" } } },
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": { "ColorId": 0, "Percent": 0 }
+                            }
+                          }
+                        }
+                      },
+                      "radius": { "expr": { "Literal": { "Value": "10D" } } }
+                    }
+                  }
+                ],
+                "dropShadow": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "true" } } },
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": 0,
+                                "Percent": -0.1
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "preset": {
+                        "expr": { "Literal": { "Value": "\"Center\"" } }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "filters": [
+            {
+              "name": "665b92769d6e5040375b",
+              "expression": {
+                "Column": {
+                  "Expression": { "SourceRef": { "Entity": "Dates" } },
+                  "Property": "CurrMonthOffset"
+                }
+              },
+              "filter": {
+                "Version": 2,
+                "From": [{ "Name": "d", "Entity": "Dates", "Type": 0 }],
+                "Where": [
+                  {
+                    "Condition": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": { "SourceRef": { "Source": "d" } },
+                              "Property": "CurrMonthOffset"
+                            }
+                          }
+                        ],
+                        "Values": [[{ "Literal": { "Value": "-1L" } }]]
+                      }
+                    }
+                  }
+                ]
+              },
+              "type": "Categorical",
+              "howCreated": 1,
+              "objects": {}
+            }
+          ],
+          "height": 214.66,
+          "width": 529.69,
+          "x": 373.26,
+          "y": 482.33,
+          "z": 5000.0
+        },
+        {
+          "config": {
+            "name": "cd9825acae91e6648021",
+            "layouts": [
+              {
+                "id": 0,
+                "position": {
+                  "height": 158.01242236024842,
+                  "width": 618.1366459627328,
+                  "x": 0,
+                  "y": 0,
+                  "z": 1000,
+                  "tabOrder": 3000
+                }
+              },
+              {
+                "id": 1,
+                "position": {
+                  "x": 0,
+                  "y": 74,
+                  "z": 1000,
+                  "width": 160,
+                  "height": 126,
+                  "tabOrder": 13000
+                }
+              }
+            ],
+            "singleVisual": {
+              "visualType": "shape",
+              "drillFilterOtherVisuals": true,
+              "objects": {
+                "shape": [
+                  {
+                    "properties": {
+                      "tileShape": {
+                        "expr": {
+                          "Literal": { "Value": "\"rectangleRounded\"" }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "rotation": [
+                  {
+                    "properties": {
+                      "shapeAngle": { "expr": { "Literal": { "Value": "0L" } } }
+                    }
+                  }
+                ],
+                "fill": [
+                  {
+                    "properties": {
+                      "fillColor": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": { "ColorId": 0, "Percent": 0 }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "selector": { "id": "default" }
+                  },
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } }
+                    }
+                  }
+                ],
+                "outline": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } }
+                    }
+                  }
+                ]
+              },
+              "vcObjects": {
+                "background": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "true" } } }
+                    }
+                  }
+                ],
+                "border": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "true" } } },
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": 0,
+                                "Percent": -0.1
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "radius": { "expr": { "Literal": { "Value": "10D" } } }
+                    }
+                  }
+                ],
+                "dropShadow": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "true" } } },
+                      "preset": {
+                        "expr": { "Literal": { "Value": "\"Center\"" } }
+                      },
+                      "angle": { "expr": { "Literal": { "Value": "0L" } } },
+                      "shadowDistance": {
+                        "expr": { "Literal": { "Value": "0L" } }
+                      },
+                      "shadowBlur": {
+                        "expr": { "Literal": { "Value": "15L" } }
+                      },
+                      "shadowSpread": {
+                        "expr": { "Literal": { "Value": "3L" } }
+                      },
+                      "transparency": {
+                        "expr": { "Literal": { "Value": "70L" } }
+                      },
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": 0,
+                                "Percent": -0.3
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            "parentGroupName": "754b28f63300937a8061",
+            "howCreated": "InsertVisualButton"
+          },
+          "filters": [],
+          "height": 158.01,
+          "width": 618.14,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1000.0
+        },
+        {
+          "config": {
+            "name": "d4e080afd30dceb48e2a",
+            "layouts": [
+              {
+                "id": 0,
+                "position": {
+                  "height": 68.57142857142857,
+                  "width": 190,
+                  "x": 0,
+                  "y": 35.78260869565213,
+                  "z": 5000,
+                  "tabOrder": 0
+                }
+              },
+              {
+                "id": 1,
+                "position": {
+                  "x": 171,
+                  "y": 105,
+                  "z": 12000,
+                  "width": 145,
+                  "height": 40,
+                  "tabOrder": 10000
+                }
+              }
+            ],
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "projections": {
+                "Data": [{ "queryRef": "_Measures.TTL Margin" }]
+              },
+              "prototypeQuery": {
+                "Version": 2,
+                "From": [{ "Name": "_", "Entity": "_Measures", "Type": 0 }],
+                "Select": [
+                  {
+                    "Measure": {
+                      "Expression": { "SourceRef": { "Source": "_" } },
+                      "Property": "TTL Margin"
+                    },
+                    "Name": "_Measures.TTL Margin",
+                    "NativeReferenceName": "TTL Margin"
+                  }
+                ],
+                "OrderBy": [
+                  {
+                    "Direction": 2,
+                    "Expression": {
+                      "Measure": {
+                        "Expression": { "SourceRef": { "Source": "_" } },
+                        "Property": "TTL Margin"
+                      }
+                    }
+                  }
+                ]
+              },
+              "drillFilterOtherVisuals": true,
+              "hasDefaultSort": true,
+              "objects": {
+                "label": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } },
+                      "fontSize": { "expr": { "Literal": { "Value": "16D" } } },
+                      "bold": { "expr": { "Literal": { "Value": "true" } } },
+                      "fontColor": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": { "ColorId": 9, "Percent": 0 }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "selector": { "id": "default" }
+                  }
+                ],
+                "outline": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } }
+                    },
+                    "selector": { "id": "default" }
+                  }
+                ],
+                "padding": [
+                  {
+                    "properties": {
+                      "paddingSelection": {
+                        "expr": { "Literal": { "Value": "\"Narrow\"" } }
+                      }
+                    },
+                    "selector": { "id": "default" }
+                  }
+                ],
+                "fillCustom": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } }
+                    }
+                  }
+                ],
+                "value": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "true" } } }
+                    }
+                  },
+                  {
+                    "properties": {
+                      "fontSize": { "expr": { "Literal": { "Value": "23D" } } }
+                    },
+                    "selector": { "id": "default" }
+                  },
+                  {
+                    "properties": {
+                      "labelDisplayUnits": {
+                        "expr": { "Literal": { "Value": "1D" } }
+                      },
+                      "fontSize": { "expr": { "Literal": { "Value": "23D" } } }
+                    },
+                    "selector": { "metadata": "_Measures.TTL Margin" }
+                  }
+                ]
+              },
+              "vcObjects": {
+                "border": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } },
+                      "radius": { "expr": { "Literal": { "Value": "10D" } } },
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": 0,
+                                "Percent": -0.1
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "dropShadow": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } },
+                      "preset": {
+                        "expr": { "Literal": { "Value": "\"Center\"" } }
+                      },
+                      "angle": { "expr": { "Literal": { "Value": "0L" } } },
+                      "shadowDistance": {
+                        "expr": { "Literal": { "Value": "0L" } }
+                      },
+                      "shadowBlur": {
+                        "expr": { "Literal": { "Value": "15L" } }
+                      },
+                      "shadowSpread": {
+                        "expr": { "Literal": { "Value": "3L" } }
+                      },
+                      "transparency": {
+                        "expr": { "Literal": { "Value": "70L" } }
+                      },
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": 0,
+                                "Percent": -0.1
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "background": [
+                  {
+                    "properties": {
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": 0,
+                                "Percent": -0.2
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "show": { "expr": { "Literal": { "Value": "false" } } }
+                    }
+                  }
+                ],
+                "padding": [
+                  {
+                    "properties": {
+                      "top": { "expr": { "Literal": { "Value": "1D" } } },
+                      "bottom": { "expr": { "Literal": { "Value": "1D" } } }
+                    }
+                  }
+                ]
+              }
+            },
+            "parentGroupName": "b614c180711e52d60820"
+          },
+          "filters": [],
+          "height": 68.57,
+          "width": 190.0,
+          "x": 0.0,
+          "y": 35.78,
+          "z": 5000.0
+        },
+        {
+          "config": {
+            "name": "df4440efa79a0e05bc1a",
+            "layouts": [
+              {
+                "id": 0,
+                "position": {
+                  "height": 29.813664596273288,
+                  "width": 199.75155279503105,
+                  "x": 0,
+                  "y": 84.472049689441,
+                  "z": 5000,
+                  "tabOrder": 1000
+                }
+              },
+              {
+                "id": 1,
+                "position": {
+                  "x": 171,
+                  "y": 171,
+                  "z": 16000,
+                  "width": 145,
+                  "height": 25,
+                  "tabOrder": 16000
+                }
+              }
+            ],
+            "singleVisual": {
+              "visualType": "card",
+              "projections": {
+                "Values": [{ "queryRef": "_Measures.WoW Margin Text" }]
+              },
+              "prototypeQuery": {
+                "Version": 2,
+                "From": [{ "Name": "_", "Entity": "_Measures", "Type": 0 }],
+                "Select": [
+                  {
+                    "Measure": {
+                      "Expression": { "SourceRef": { "Source": "_" } },
+                      "Property": "WoW Margin Text"
+                    },
+                    "Name": "_Measures.WoW Margin Text",
+                    "NativeReferenceName": "WoW Margin Text"
+                  }
+                ]
+              },
+              "drillFilterOtherVisuals": true,
+              "hasDefaultSort": true,
+              "objects": {
+                "categoryLabels": [
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } }
+                    }
+                  }
+                ],
+                "labels": [
+                  {
+                    "properties": {
+                      "fontSize": { "expr": { "Literal": { "Value": "12D" } } },
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "Conditional": {
+                                "Cases": [
+                                  {
+                                    "Condition": {
+                                      "Comparison": {
+                                        "ComparisonKind": 2,
+                                        "Left": {
+                                          "Measure": {
+                                            "Expression": {
+                                              "SourceRef": {
+                                                "Entity": "_Measures"
+                                              }
+                                            },
+                                            "Property": "WoW Margin"
+                                          }
+                                        },
+                                        "Right": {
+                                          "Literal": { "Value": "0D" }
+                                        }
+                                      }
+                                    },
+                                    "Value": {
+                                      "Literal": { "Value": "\"#01A655\"" }
+                                    }
+                                  },
+                                  {
+                                    "Condition": {
+                                      "Comparison": {
+                                        "ComparisonKind": 3,
+                                        "Left": {
+                                          "Measure": {
+                                            "Expression": {
+                                              "SourceRef": {
+                                                "Entity": "_Measures"
+                                              }
+                                            },
+                                            "Property": "WoW Margin"
+                                          }
+                                        },
+                                        "Right": {
+                                          "Literal": { "Value": "0D" }
+                                        }
+                                      }
+                                    },
+                                    "Value": {
+                                      "Literal": { "Value": "\"#D64550\"" }
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              "vcObjects": {
+                "padding": [
+                  {
+                    "properties": {
+                      "top": { "expr": { "Literal": { "Value": "0D" } } },
+                      "right": { "expr": { "Literal": { "Value": "0D" } } },
+                      "bottom": { "expr": { "Literal": { "Value": "0D" } } },
+                      "left": { "expr": { "Literal": { "Value": "0D" } } }
+                    }
+                  }
+                ]
+              }
+            },
+            "parentGroupName": "890143b9434d83ad5086"
+          },
+          "filters": [],
+          "height": 29.81,
+          "width": 199.75,
+          "x": 0.0,
+          "y": 84.47,
+          "z": 5000.0
+        },
+        {
+          "config": {
+            "name": "e675f2c34e64a30e6050",
+            "layouts": [
+              {
+                "id": 0,
+                "position": {
+                  "height": 117.26708074534159,
+                  "width": 199.75155279503105,
+                  "x": 0,
+                  "y": 0,
+                  "z": 18000,
+                  "tabOrder": 1000
+                }
+              }
+            ],
+            "singleVisualGroup": { "displayName": "Group 2", "groupMode": 0 },
+            "parentGroupName": "0e777df0a0199a5e5e69"
+          },
+          "height": 117.27,
+          "width": 199.75,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 18000.0
+        },
+        {
+          "config": {
+            "name": "ebb877884ee5b606c9e0",
+            "layouts": [
+              {
+                "id": 0,
+                "position": {
+                  "x": 12.919254658385093,
+                  "y": 0,
+                  "z": 0,
+                  "width": 134.1614906832298,
+                  "height": 75.52795031055899,
+                  "tabOrder": 0
+                }
+              },
+              {
+                "id": 1,
+                "position": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 2000,
+                  "width": 106,
+                  "height": 61,
+                  "tabOrder": 0
+                }
+              }
+            ],
+            "singleVisual": {
+              "visualType": "image",
+              "drillFilterOtherVisuals": true,
+              "objects": {
+                "general": [
+                  {
+                    "properties": {
+                      "imageUrl": {
+                        "expr": {
+                          "ResourcePackageItem": {
+                            "PackageName": "RegisteredResources",
+                            "PackageType": 1,
+                            "ItemName": "jaffa_logo5434158308223388.png"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "imageScaling": [
+                  {
+                    "properties": {
+                      "imageScalingType": {
+                        "expr": { "Literal": { "Value": "\"Fill\"" } }
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            "howCreated": "InsertVisualButton"
+          },
+          "filters": [],
+          "height": 75.53,
+          "width": 134.16,
+          "x": 12.92,
+          "y": 0.0,
+          "z": 0.0
+        },
+        {
+          "config": {
+            "name": "f14004af502662cd3568",
+            "layouts": [
+              {
+                "id": 0,
+                "position": {
+                  "height": 127.20496894409936,
+                  "width": 11.925465838509316,
+                  "x": 200.74534161490683,
+                  "y": 13.664596273291949,
+                  "z": 13000,
+                  "tabOrder": 1000
+                }
+              }
+            ],
+            "singleVisual": {
+              "visualType": "shape",
+              "drillFilterOtherVisuals": true,
+              "objects": {
+                "shape": [
+                  {
+                    "properties": {
+                      "tileShape": {
+                        "expr": { "Literal": { "Value": "\"line\"" } }
+                      }
+                    }
+                  }
+                ],
+                "rotation": [
+                  {
+                    "properties": {
+                      "shapeAngle": {
+                        "expr": { "Literal": { "Value": "0L" } }
+                      },
+                      "angle": { "expr": { "Literal": { "Value": "90D" } } }
+                    }
+                  }
+                ],
+                "fill": [
+                  {
+                    "properties": {
+                      "fillColor": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": { "ColorId": 6, "Percent": 0.4 }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "selector": { "id": "default" }
+                  },
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } }
+                    }
+                  }
+                ],
+                "outline": [
+                  {
+                    "properties": {
+                      "lineColor": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": 0,
+                                "Percent": -0.1
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "transparency": {
+                        "expr": { "Literal": { "Value": "50D" } }
+                      }
+                    },
+                    "selector": { "id": "default" }
+                  }
+                ]
+              }
+            },
+            "parentGroupName": "754b28f63300937a8061",
+            "howCreated": "InsertVisualButton"
+          },
+          "filters": [],
+          "height": 127.2,
+          "width": 11.93,
+          "x": 200.75,
+          "y": 13.66,
+          "z": 13000.0
+        },
+        {
+          "config": {
+            "name": "f803fcf876e2d1d0b08e",
+            "layouts": [
+              {
+                "id": 0,
+                "position": {
+                  "height": 104.3540372670807,
+                  "width": 190,
+                  "x": 0,
+                  "y": 12.919254658385114,
+                  "z": 1000,
+                  "tabOrder": 0
+                }
+              }
+            ],
+            "singleVisualGroup": { "displayName": "Group 4", "groupMode": 0 },
+            "parentGroupName": "b94fb056ec026e00b915"
+          },
+          "height": 104.35,
+          "width": 190.0,
+          "x": 0.0,
+          "y": 12.92,
+          "z": 1000.0
+        },
+        {
+          "config": {
+            "name": "f9b7264055224443c66c",
+            "layouts": [
+              {
+                "id": 0,
+                "position": {
+                  "height": 127.20496894409936,
+                  "width": 11.925465838509316,
+                  "x": 202.73291925465833,
+                  "y": 13.664596273291949,
+                  "z": 15000,
+                  "tabOrder": 0
+                }
+              }
+            ],
+            "singleVisual": {
+              "visualType": "shape",
+              "drillFilterOtherVisuals": true,
+              "objects": {
+                "shape": [
+                  {
+                    "properties": {
+                      "tileShape": {
+                        "expr": { "Literal": { "Value": "\"line\"" } }
+                      }
+                    }
+                  }
+                ],
+                "rotation": [
+                  {
+                    "properties": {
+                      "shapeAngle": {
+                        "expr": { "Literal": { "Value": "0L" } }
+                      },
+                      "angle": { "expr": { "Literal": { "Value": "90D" } } }
+                    }
+                  }
+                ],
+                "fill": [
+                  {
+                    "properties": {
+                      "fillColor": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": { "ColorId": 6, "Percent": 0.4 }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "selector": { "id": "default" }
+                  },
+                  {
+                    "properties": {
+                      "show": { "expr": { "Literal": { "Value": "false" } } }
+                    }
+                  }
+                ],
+                "outline": [
+                  {
+                    "properties": {
+                      "lineColor": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": 0,
+                                "Percent": -0.1
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "transparency": {
+                        "expr": { "Literal": { "Value": "50D" } }
+                      }
+                    },
+                    "selector": { "id": "default" }
+                  }
+                ]
+              }
+            },
+            "parentGroupName": "55a86309c290d04a25a0",
+            "howCreated": "InsertVisualButton"
+          },
+          "filters": [],
+          "height": 127.2,
+          "width": 11.93,
+          "x": 202.73,
+          "y": 13.66,
+          "z": 15000.0
         }
-    ]
+      ],
+      "width": 1280.0
+    }
+  ]
 }
