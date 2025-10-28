@@ -1,0 +1,4597 @@
+{
+  "config": {
+    "version": "<string>",
+    "themeCollection": {
+      "baseTheme": {
+        "name": "<string>",
+        "type": "<number>",
+        "version": {
+          "visual": "<string>",
+          "report": "<string>",
+          "page": "<string>"
+        }
+      }
+    },
+    "activeSectionIndex": "<number>",
+    "defaultDrillFilterOtherVisuals": "<number>",
+    "linguisticSchemaSyncVersion": "<number>",
+    "settings": {
+      "useNewFilterPaneExperience": "<number>",
+      "allowChangeFilterTypes": "<number>",
+      "useStylableVisualContainerHeader": "<number>",
+      "queryLimitOption": "<number>",
+      "useEnhancedTooltips": "<number>",
+      "exportDataMode": "<number>",
+      "useDefaultAggregateDisplayName": "<number>"
+    },
+    "objects": {
+      "section": [
+        {
+          "properties": {
+            "verticalAlignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "<string>"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "layoutOptimization": "<number>",
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "items": [
+          {
+            "name": "<string>",
+            "path": "<string>",
+            "type": "<number>"
+          }
+        ],
+        "name": "<string>",
+        "type": "<number>"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": {
+        "relationships": [
+          {
+            "source": "<string>",
+            "target": "<string>",
+            "type": "<number>"
+          }
+        ],
+        "objects": {
+          "displayArea": [
+            {
+              "properties": {
+                "verticalAlignment": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "<string>"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      "displayName": "<string>",
+      "displayOption": "<number>",
+      "filters": [],
+      "height": "<number>",
+      "name": "<string>",
+      "visualContainers": [
+        {
+          "config": {
+            "name": "<string>",
+            "layouts": [
+              {
+                "id": "<number>",
+                "position": {
+                  "height": "<number>",
+                  "width": "<number>",
+                  "x": "<number>",
+                  "y": "<number>",
+                  "z": "<number>",
+                  "tabOrder": "<number>"
+                }
+              }
+            ],
+            "singleVisualGroup": {
+              "displayName": "<string>",
+              "groupMode": "<number>"
+            },
+            "parentGroupName": "<string>"
+          },
+          "height": "<number>",
+          "width": "<number>",
+          "x": "<number>",
+          "y": "<number>",
+          "z": "<number>"
+        },
+        {
+          "config": {
+            "name": "<string>",
+            "layouts": [
+              {
+                "id": "<number>",
+                "position": {
+                  "height": "<number>",
+                  "width": "<number>",
+                  "x": "<number>",
+                  "y": "<number>",
+                  "z": "<number>",
+                  "tabOrder": "<number>"
+                }
+              }
+            ],
+            "singleVisual": {
+              "visualType": "<string>",
+              "projections": {
+                "Values": [
+                  {
+                    "queryRef": "<string>"
+                  }
+                ]
+              },
+              "prototypeQuery": {
+                "Version": "<number>",
+                "From": [
+                  {
+                    "Name": "<string>",
+                    "Entity": "<string>",
+                    "Type": "<number>"
+                  }
+                ],
+                "Select": [
+                  {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "<string>"
+                        }
+                      },
+                      "Property": "<string>"
+                    },
+                    "Name": "<string>",
+                    "NativeReferenceName": "<string>"
+                  }
+                ]
+              },
+              "drillFilterOtherVisuals": "<number>",
+              "hasDefaultSort": "<number>",
+              "objects": {
+                "categoryLabels": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "labels": [
+                  {
+                    "properties": {
+                      "fontSize": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "Conditional": {
+                                "Cases": [
+                                  {
+                                    "Condition": {
+                                      "Comparison": {
+                                        "ComparisonKind": "<number>",
+                                        "Left": {
+                                          "Measure": {
+                                            "Expression": {
+                                              "SourceRef": {
+                                                "Entity": "<string>"
+                                              }
+                                            },
+                                            "Property": "<string>"
+                                          }
+                                        },
+                                        "Right": {
+                                          "Literal": {
+                                            "Value": "<string>"
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "Value": {
+                                      "Literal": {
+                                        "Value": "<string>"
+                                      }
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              "vcObjects": {
+                "padding": [
+                  {
+                    "properties": {
+                      "top": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "right": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "bottom": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "left": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            "parentGroupName": "<string>"
+          },
+          "filters": [],
+          "height": "<number>",
+          "width": "<number>",
+          "x": "<number>",
+          "y": "<number>",
+          "z": "<number>"
+        },
+        {
+          "config": {
+            "name": "<string>",
+            "layouts": [
+              {
+                "id": "<number>",
+                "position": {
+                  "x": "<number>",
+                  "y": "<number>",
+                  "z": "<number>",
+                  "width": "<number>",
+                  "height": "<number>",
+                  "tabOrder": "<number>"
+                }
+              }
+            ],
+            "singleVisual": {
+              "visualType": "<string>",
+              "projections": {
+                "Category": [
+                  {
+                    "queryRef": "<string>",
+                    "active": "<number>"
+                  }
+                ],
+                "Y": [
+                  {
+                    "queryRef": "<string>"
+                  }
+                ]
+              },
+              "prototypeQuery": {
+                "Version": "<number>",
+                "From": [
+                  {
+                    "Name": "<string>",
+                    "Entity": "<string>",
+                    "Type": "<number>"
+                  }
+                ],
+                "Select": [
+                  {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "<string>"
+                        }
+                      },
+                      "Property": "<string>"
+                    },
+                    "Name": "<string>",
+                    "NativeReferenceName": "<string>"
+                  },
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "<string>"
+                        }
+                      },
+                      "Property": "<string>"
+                    },
+                    "Name": "<string>",
+                    "NativeReferenceName": "<string>"
+                  }
+                ],
+                "OrderBy": [
+                  {
+                    "Direction": "<number>",
+                    "Expression": {
+                      "Measure": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "<string>"
+                          }
+                        },
+                        "Property": "<string>"
+                      }
+                    }
+                  }
+                ]
+              },
+              "drillFilterOtherVisuals": "<number>",
+              "hasDefaultSort": "<number>",
+              "objects": {
+                "layout": [
+                  {
+                    "properties": {}
+                  }
+                ],
+                "labels": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "properties": {
+                      "showSeries": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "labelPosition": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    },
+                    "selector": {
+                      "metadata": "<string>"
+                    }
+                  }
+                ],
+                "legend": [
+                  {
+                    "properties": {
+                      "showGradientLegend": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "valueAxis": [
+                  {
+                    "properties": {
+                      "showAxisTitle": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "labelDisplayUnits": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "categoryAxis": [
+                  {
+                    "properties": {
+                      "axisType": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "showAxisTitle": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "maxMarginFactor": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              "vcObjects": {
+                "title": [
+                  {
+                    "properties": {
+                      "text": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "alignment": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "border": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": "<number>",
+                                "Percent": "<number>"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "radius": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "dropShadow": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": "<number>",
+                                "Percent": "<number>"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "preset": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "filters": [
+            {
+              "expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "<string>"
+                    }
+                  },
+                  "Property": "<string>"
+                }
+              },
+              "filter": {
+                "Version": "<number>",
+                "From": [
+                  {
+                    "Name": "<string>",
+                    "Expression": {
+                      "Subquery": {
+                        "Query": {
+                          "Version": "<number>",
+                          "From": [
+                            {
+                              "Name": "<string>",
+                              "Entity": "<string>",
+                              "Type": "<number>"
+                            }
+                          ],
+                          "Select": [
+                            {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Source": "<string>"
+                                  }
+                                },
+                                "Property": "<string>"
+                              },
+                              "Name": "<string>"
+                            }
+                          ],
+                          "OrderBy": [
+                            {
+                              "Direction": "<number>",
+                              "Expression": {
+                                "Measure": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "<string>"
+                                    }
+                                  },
+                                  "Property": "<string>"
+                                }
+                              }
+                            }
+                          ],
+                          "Top": "<number>"
+                        }
+                      }
+                    },
+                    "Type": "<number>"
+                  },
+                  {
+                    "Name": "<string>",
+                    "Entity": "<string>",
+                    "Type": "<number>"
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "<string>"
+                                }
+                              },
+                              "Property": "<string>"
+                            }
+                          }
+                        ],
+                        "Table": {
+                          "SourceRef": {
+                            "Source": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              "type": "<string>",
+              "howCreated": "<number>",
+              "isHiddenInViewMode": "<number>"
+            }
+          ],
+          "height": "<number>",
+          "width": "<number>",
+          "x": "<number>",
+          "y": "<number>",
+          "z": "<number>"
+        },
+        {
+          "config": {
+            "name": "<string>",
+            "layouts": [
+              {
+                "id": "<number>",
+                "position": {
+                  "height": "<number>",
+                  "width": "<number>",
+                  "x": "<number>",
+                  "y": "<number>",
+                  "z": "<number>",
+                  "tabOrder": "<number>"
+                }
+              }
+            ],
+            "singleVisual": {
+              "visualType": "<string>",
+              "drillFilterOtherVisuals": "<number>",
+              "objects": {
+                "general": [
+                  {
+                    "properties": {
+                      "paragraphs": [
+                        {
+                          "textRuns": [
+                            {
+                              "value": "<string>",
+                              "textStyle": {
+                                "fontFamily": "<string>",
+                                "fontSize": "<string>"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              "vcObjects": {
+                "background": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            "parentGroupName": "<string>"
+          },
+          "filters": [],
+          "height": "<number>",
+          "width": "<number>",
+          "x": "<number>",
+          "y": "<number>",
+          "z": "<number>"
+        },
+        {
+          "config": {
+            "name": "<string>",
+            "layouts": [
+              {
+                "id": "<number>",
+                "position": {
+                  "height": "<number>",
+                  "width": "<number>",
+                  "x": "<number>",
+                  "y": "<number>",
+                  "z": "<number>",
+                  "tabOrder": "<number>"
+                }
+              }
+            ],
+            "singleVisual": {
+              "visualType": "<string>",
+              "drillFilterOtherVisuals": "<number>",
+              "objects": {
+                "shape": [
+                  {
+                    "properties": {
+                      "tileShape": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "rotation": [
+                  {
+                    "properties": {
+                      "shapeAngle": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "angle": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "fill": [
+                  {
+                    "properties": {
+                      "fillColor": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": "<number>",
+                                "Percent": "<number>"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "selector": {
+                      "id": "<string>"
+                    }
+                  },
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "outline": [
+                  {
+                    "properties": {
+                      "lineColor": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": "<number>",
+                                "Percent": "<number>"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "transparency": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    },
+                    "selector": {
+                      "id": "<string>"
+                    }
+                  }
+                ]
+              }
+            },
+            "parentGroupName": "<string>",
+            "howCreated": "<string>"
+          },
+          "filters": [],
+          "height": "<number>",
+          "width": "<number>",
+          "x": "<number>",
+          "y": "<number>",
+          "z": "<number>"
+        },
+        {
+          "config": {
+            "name": "<string>",
+            "layouts": [
+              {
+                "id": "<number>",
+                "position": {
+                  "x": "<number>",
+                  "y": "<number>",
+                  "z": "<number>",
+                  "width": "<number>",
+                  "height": "<number>",
+                  "tabOrder": "<number>"
+                }
+              }
+            ],
+            "singleVisual": {
+              "visualType": "<string>",
+              "projections": {
+                "Category": [
+                  {
+                    "queryRef": "<string>",
+                    "active": "<number>"
+                  }
+                ],
+                "Y": [
+                  {
+                    "queryRef": "<string>"
+                  }
+                ]
+              },
+              "prototypeQuery": {
+                "Version": "<number>",
+                "From": [
+                  {
+                    "Name": "<string>",
+                    "Entity": "<string>",
+                    "Type": "<number>"
+                  }
+                ],
+                "Select": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "<string>"
+                        }
+                      },
+                      "Property": "<string>"
+                    },
+                    "Name": "<string>",
+                    "NativeReferenceName": "<string>"
+                  },
+                  {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "<string>"
+                        }
+                      },
+                      "Property": "<string>"
+                    },
+                    "Name": "<string>",
+                    "NativeReferenceName": "<string>"
+                  }
+                ],
+                "OrderBy": [
+                  {
+                    "Direction": "<number>",
+                    "Expression": {
+                      "Measure": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "<string>"
+                          }
+                        },
+                        "Property": "<string>"
+                      }
+                    }
+                  }
+                ]
+              },
+              "drillFilterOtherVisuals": "<number>",
+              "hasDefaultSort": "<number>",
+              "objects": {
+                "layout": [
+                  {
+                    "properties": {}
+                  }
+                ],
+                "labels": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "legend": [
+                  {
+                    "properties": {
+                      "showGradientLegend": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "valueAxis": [
+                  {
+                    "properties": {
+                      "showAxisTitle": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "labelDisplayUnits": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "categoryAxis": [
+                  {
+                    "properties": {
+                      "axisType": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "showAxisTitle": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "maxMarginFactor": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              "vcObjects": {
+                "title": [
+                  {
+                    "properties": {
+                      "text": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "alignment": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "border": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": "<number>",
+                                "Percent": "<number>"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "radius": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "dropShadow": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": "<number>",
+                                "Percent": "<number>"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "preset": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "filters": [
+            {
+              "expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "<string>"
+                    }
+                  },
+                  "Property": "<string>"
+                }
+              },
+              "filter": {
+                "Version": "<number>",
+                "From": [
+                  {
+                    "Name": "<string>",
+                    "Expression": {
+                      "Subquery": {
+                        "Query": {
+                          "Version": "<number>",
+                          "From": [
+                            {
+                              "Name": "<string>",
+                              "Entity": "<string>",
+                              "Type": "<number>"
+                            }
+                          ],
+                          "Select": [
+                            {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Source": "<string>"
+                                  }
+                                },
+                                "Property": "<string>"
+                              },
+                              "Name": "<string>"
+                            }
+                          ],
+                          "OrderBy": [
+                            {
+                              "Direction": "<number>",
+                              "Expression": {
+                                "Measure": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "<string>"
+                                    }
+                                  },
+                                  "Property": "<string>"
+                                }
+                              }
+                            }
+                          ],
+                          "Top": "<number>"
+                        }
+                      }
+                    },
+                    "Type": "<number>"
+                  },
+                  {
+                    "Name": "<string>",
+                    "Entity": "<string>",
+                    "Type": "<number>"
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "<string>"
+                                }
+                              },
+                              "Property": "<string>"
+                            }
+                          }
+                        ],
+                        "Table": {
+                          "SourceRef": {
+                            "Source": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              "type": "<string>",
+              "howCreated": "<number>",
+              "isHiddenInViewMode": "<number>"
+            }
+          ],
+          "height": "<number>",
+          "width": "<number>",
+          "x": "<number>",
+          "y": "<number>",
+          "z": "<number>"
+        },
+        {
+          "config": {
+            "name": "<string>",
+            "layouts": [
+              {
+                "id": "<number>",
+                "position": {
+                  "x": "<number>",
+                  "y": "<number>",
+                  "z": "<number>",
+                  "width": "<number>",
+                  "height": "<number>",
+                  "tabOrder": "<number>"
+                }
+              }
+            ],
+            "singleVisual": {
+              "visualType": "<string>",
+              "projections": {
+                "Values": [
+                  {
+                    "queryRef": "<string>",
+                    "active": "<number>"
+                  }
+                ]
+              },
+              "prototypeQuery": {
+                "Version": "<number>",
+                "From": [
+                  {
+                    "Name": "<string>",
+                    "Entity": "<string>",
+                    "Type": "<number>"
+                  }
+                ],
+                "Select": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "<string>"
+                        }
+                      },
+                      "Property": "<string>"
+                    },
+                    "Name": "<string>",
+                    "NativeReferenceName": "<string>"
+                  }
+                ]
+              },
+              "drillFilterOtherVisuals": "<number>",
+              "objects": {
+                "data": [
+                  {
+                    "properties": {
+                      "mode": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "general": [
+                  {
+                    "properties": {}
+                  }
+                ],
+                "header": [
+                  {
+                    "properties": {
+                      "text": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "filters": [],
+          "height": "<number>",
+          "width": "<number>",
+          "x": "<number>",
+          "y": "<number>",
+          "z": "<number>"
+        },
+        {
+          "config": {
+            "name": "<string>",
+            "layouts": [
+              {
+                "id": "<number>",
+                "position": {
+                  "x": "<number>",
+                  "y": "<number>",
+                  "z": "<number>",
+                  "width": "<number>",
+                  "height": "<number>",
+                  "tabOrder": "<number>"
+                }
+              }
+            ],
+            "singleVisual": {
+              "visualType": "<string>",
+              "projections": {
+                "Category": [
+                  {
+                    "queryRef": "<string>",
+                    "active": "<number>"
+                  }
+                ],
+                "Y": [
+                  {
+                    "queryRef": "<string>"
+                  }
+                ]
+              },
+              "prototypeQuery": {
+                "Version": "<number>",
+                "From": [
+                  {
+                    "Name": "<string>",
+                    "Entity": "<string>",
+                    "Type": "<number>"
+                  }
+                ],
+                "Select": [
+                  {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "<string>"
+                            }
+                          },
+                          "Hierarchy": "<string>"
+                        }
+                      },
+                      "Level": "<string>"
+                    },
+                    "Name": "<string>",
+                    "NativeReferenceName": "<string>"
+                  },
+                  {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "<string>"
+                        }
+                      },
+                      "Property": "<string>"
+                    },
+                    "Name": "<string>",
+                    "NativeReferenceName": "<string>"
+                  }
+                ],
+                "OrderBy": [
+                  {
+                    "Direction": "<number>",
+                    "Expression": {
+                      "HierarchyLevel": {
+                        "Expression": {
+                          "Hierarchy": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "<string>"
+                              }
+                            },
+                            "Hierarchy": "<string>"
+                          }
+                        },
+                        "Level": "<string>"
+                      }
+                    }
+                  }
+                ]
+              },
+              "drillFilterOtherVisuals": "<number>",
+              "objects": {
+                "categoryAxis": [
+                  {
+                    "properties": {
+                      "showAxisTitle": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "concatenateLabels": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "axisType": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "valueAxis": [
+                  {
+                    "properties": {
+                      "showAxisTitle": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "labelDisplayUnits": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "labels": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "layout": [
+                  {
+                    "properties": {}
+                  }
+                ],
+                "legend": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "lineStyles": [
+                  {
+                    "properties": {
+                      "lineChartType": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              "vcObjects": {
+                "title": [
+                  {
+                    "properties": {
+                      "text": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "alignment": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "border": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": "<number>",
+                                "Percent": "<number>"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "radius": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "dropShadow": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": "<number>",
+                                "Percent": "<number>"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "preset": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "filters": [
+            {
+              "name": "<string>",
+              "expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "<string>"
+                    }
+                  },
+                  "Property": "<string>"
+                }
+              },
+              "filter": {
+                "Version": "<number>",
+                "From": [
+                  {
+                    "Name": "<string>",
+                    "Entity": "<string>",
+                    "Type": "<number>"
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "<string>"
+                                }
+                              },
+                              "Property": "<string>"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "<string>"
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    }
+                  }
+                ]
+              },
+              "type": "<string>",
+              "howCreated": "<number>",
+              "objects": {}
+            }
+          ],
+          "height": "<number>",
+          "width": "<number>",
+          "x": "<number>",
+          "y": "<number>",
+          "z": "<number>"
+        },
+        {
+          "config": {
+            "name": "<string>",
+            "layouts": [
+              {
+                "id": "<number>",
+                "position": {
+                  "height": "<number>",
+                  "width": "<number>",
+                  "x": "<number>",
+                  "y": "<number>",
+                  "z": "<number>",
+                  "tabOrder": "<number>"
+                }
+              }
+            ],
+            "singleVisualGroup": {
+              "displayName": "<string>",
+              "groupMode": "<number>"
+            }
+          },
+          "height": "<number>",
+          "width": "<number>",
+          "x": "<number>",
+          "y": "<number>",
+          "z": "<number>"
+        },
+        {
+          "config": {
+            "name": "<string>",
+            "layouts": [
+              {
+                "id": "<number>",
+                "position": {
+                  "height": "<number>",
+                  "width": "<number>",
+                  "x": "<number>",
+                  "y": "<number>",
+                  "z": "<number>",
+                  "tabOrder": "<number>"
+                }
+              }
+            ],
+            "singleVisual": {
+              "visualType": "<string>",
+              "projections": {
+                "Category": [
+                  {
+                    "queryRef": "<string>",
+                    "active": "<number>"
+                  }
+                ],
+                "Y": [
+                  {
+                    "queryRef": "<string>"
+                  }
+                ]
+              },
+              "prototypeQuery": {
+                "Version": "<number>",
+                "From": [
+                  {
+                    "Name": "<string>",
+                    "Entity": "<string>",
+                    "Type": "<number>"
+                  }
+                ],
+                "Select": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "<string>"
+                        }
+                      },
+                      "Property": "<string>"
+                    },
+                    "Name": "<string>",
+                    "NativeReferenceName": "<string>"
+                  },
+                  {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "<string>"
+                        }
+                      },
+                      "Property": "<string>"
+                    },
+                    "Name": "<string>",
+                    "NativeReferenceName": "<string>"
+                  }
+                ],
+                "OrderBy": [
+                  {
+                    "Direction": "<number>",
+                    "Expression": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "<string>"
+                          }
+                        },
+                        "Property": "<string>"
+                      }
+                    }
+                  }
+                ]
+              },
+              "drillFilterOtherVisuals": "<number>",
+              "objects": {
+                "categoryAxis": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "valueAxis": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "showAxisTitle": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "lineStyles": [
+                  {
+                    "properties": {
+                      "lineChartType": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              "vcObjects": {
+                "title": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "background": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "visualHeader": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            "parentGroupName": "<string>"
+          },
+          "filters": [],
+          "height": "<number>",
+          "width": "<number>",
+          "x": "<number>",
+          "y": "<number>",
+          "z": "<number>"
+        },
+        {
+          "config": {
+            "name": "<string>",
+            "layouts": [
+              {
+                "id": "<number>",
+                "position": {
+                  "x": "<number>",
+                  "y": "<number>",
+                  "z": "<number>",
+                  "width": "<number>",
+                  "height": "<number>",
+                  "tabOrder": "<number>"
+                }
+              }
+            ],
+            "singleVisual": {
+              "visualType": "<string>",
+              "projections": {
+                "Values": [
+                  {
+                    "queryRef": "<string>",
+                    "active": "<number>"
+                  }
+                ]
+              },
+              "prototypeQuery": {
+                "Version": "<number>",
+                "From": [
+                  {
+                    "Name": "<string>",
+                    "Entity": "<string>",
+                    "Type": "<number>"
+                  }
+                ],
+                "Select": [
+                  {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "<string>"
+                            }
+                          },
+                          "Hierarchy": "<string>"
+                        }
+                      },
+                      "Level": "<string>"
+                    },
+                    "Name": "<string>",
+                    "NativeReferenceName": "<string>"
+                  }
+                ]
+              },
+              "drillFilterOtherVisuals": "<number>",
+              "objects": {
+                "data": [
+                  {
+                    "properties": {
+                      "mode": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "general": [
+                  {
+                    "properties": {}
+                  }
+                ],
+                "header": [
+                  {
+                    "properties": {
+                      "text": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "filters": [],
+          "height": "<number>",
+          "width": "<number>",
+          "x": "<number>",
+          "y": "<number>",
+          "z": "<number>"
+        },
+        {
+          "config": {
+            "name": "<string>",
+            "layouts": [
+              {
+                "id": "<number>",
+                "position": {
+                  "height": "<number>",
+                  "width": "<number>",
+                  "x": "<number>",
+                  "y": "<number>",
+                  "z": "<number>",
+                  "tabOrder": "<number>"
+                }
+              }
+            ],
+            "singleVisual": {
+              "visualType": "<string>",
+              "projections": {
+                "Category": [
+                  {
+                    "queryRef": "<string>",
+                    "active": "<number>"
+                  }
+                ],
+                "Y": [
+                  {
+                    "queryRef": "<string>"
+                  }
+                ]
+              },
+              "prototypeQuery": {
+                "Version": "<number>",
+                "From": [
+                  {
+                    "Name": "<string>",
+                    "Entity": "<string>",
+                    "Type": "<number>"
+                  }
+                ],
+                "Select": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "<string>"
+                        }
+                      },
+                      "Property": "<string>"
+                    },
+                    "Name": "<string>",
+                    "NativeReferenceName": "<string>"
+                  },
+                  {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "<string>"
+                        }
+                      },
+                      "Property": "<string>"
+                    },
+                    "Name": "<string>",
+                    "NativeReferenceName": "<string>"
+                  }
+                ],
+                "OrderBy": [
+                  {
+                    "Direction": "<number>",
+                    "Expression": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "<string>"
+                          }
+                        },
+                        "Property": "<string>"
+                      }
+                    }
+                  }
+                ]
+              },
+              "drillFilterOtherVisuals": "<number>",
+              "objects": {
+                "categoryAxis": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "valueAxis": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "showAxisTitle": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "lineStyles": [
+                  {
+                    "properties": {
+                      "lineChartType": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "labels": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "fontSize": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": "<number>",
+                                "Percent": "<number>"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "properties": {
+                      "dynamicLabelValue": {
+                        "expr": {
+                          "Measure": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "<string>"
+                              }
+                            },
+                            "Property": "<string>"
+                          }
+                        }
+                      }
+                    },
+                    "selector": {
+                      "data": [
+                        {
+                          "dataViewWildcard": {
+                            "matchingOption": "<number>"
+                          }
+                        }
+                      ],
+                      "highlightMatching": "<number>"
+                    }
+                  }
+                ]
+              },
+              "vcObjects": {
+                "title": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "background": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "visualHeader": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            "parentGroupName": "<string>"
+          },
+          "filters": [],
+          "height": "<number>",
+          "width": "<number>",
+          "x": "<number>",
+          "y": "<number>",
+          "z": "<number>"
+        },
+        {
+          "config": {
+            "name": "<string>",
+            "layouts": [
+              {
+                "id": "<number>",
+                "position": {
+                  "height": "<number>",
+                  "width": "<number>",
+                  "x": "<number>",
+                  "y": "<number>",
+                  "z": "<number>",
+                  "tabOrder": "<number>"
+                }
+              }
+            ],
+            "singleVisual": {
+              "visualType": "<string>",
+              "drillFilterOtherVisuals": "<number>",
+              "objects": {
+                "shape": [
+                  {
+                    "properties": {
+                      "tileShape": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "rotation": [
+                  {
+                    "properties": {
+                      "shapeAngle": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "fill": [
+                  {
+                    "properties": {
+                      "fillColor": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": "<number>",
+                                "Percent": "<number>"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "selector": {
+                      "id": "<string>"
+                    }
+                  },
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "outline": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              "vcObjects": {
+                "background": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "border": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": "<number>",
+                                "Percent": "<number>"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "radius": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "dropShadow": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "preset": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "angle": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "shadowDistance": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "shadowBlur": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "shadowSpread": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "transparency": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": "<number>",
+                                "Percent": "<number>"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            "parentGroupName": "<string>",
+            "howCreated": "<string>"
+          },
+          "filters": [],
+          "height": "<number>",
+          "width": "<number>",
+          "x": "<number>",
+          "y": "<number>",
+          "z": "<number>"
+        },
+        {
+          "config": {
+            "name": "<string>",
+            "layouts": [
+              {
+                "id": "<number>",
+                "position": {
+                  "x": "<number>",
+                  "y": "<number>",
+                  "z": "<number>",
+                  "width": "<number>",
+                  "height": "<number>",
+                  "tabOrder": "<number>"
+                }
+              }
+            ],
+            "singleVisual": {
+              "visualType": "<string>",
+              "drillFilterOtherVisuals": "<number>",
+              "objects": {
+                "general": [
+                  {
+                    "properties": {
+                      "paragraphs": [
+                        {
+                          "textRuns": [
+                            {
+                              "value": "<string>",
+                              "textStyle": {
+                                "fontWeight": "<string>",
+                                "fontSize": "<string>",
+                                "color": "<string>"
+                              }
+                            }
+                          ],
+                          "horizontalTextAlignment": "<string>"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "filters": [],
+          "height": "<number>",
+          "width": "<number>",
+          "x": "<number>",
+          "y": "<number>",
+          "z": "<number>"
+        },
+        {
+          "config": {
+            "name": "<string>",
+            "layouts": [
+              {
+                "id": "<number>",
+                "position": {
+                  "x": "<number>",
+                  "y": "<number>",
+                  "z": "<number>",
+                  "width": "<number>",
+                  "height": "<number>",
+                  "tabOrder": "<number>"
+                }
+              }
+            ],
+            "singleVisual": {
+              "visualType": "<string>",
+              "projections": {
+                "Y": [
+                  {
+                    "queryRef": "<string>"
+                  }
+                ],
+                "Category": [
+                  {
+                    "queryRef": "<string>",
+                    "active": "<number>"
+                  }
+                ]
+              },
+              "prototypeQuery": {
+                "Version": "<number>",
+                "From": [
+                  {
+                    "Name": "<string>",
+                    "Entity": "<string>",
+                    "Type": "<number>"
+                  }
+                ],
+                "Select": [
+                  {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "<string>"
+                        }
+                      },
+                      "Property": "<string>"
+                    },
+                    "Name": "<string>",
+                    "NativeReferenceName": "<string>"
+                  },
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "<string>"
+                        }
+                      },
+                      "Property": "<string>"
+                    },
+                    "Name": "<string>",
+                    "NativeReferenceName": "<string>"
+                  }
+                ],
+                "OrderBy": [
+                  {
+                    "Direction": "<number>",
+                    "Expression": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "<string>"
+                          }
+                        },
+                        "Property": "<string>"
+                      }
+                    }
+                  }
+                ]
+              },
+              "drillFilterOtherVisuals": "<number>",
+              "objects": {
+                "layout": [
+                  {
+                    "properties": {
+                      "clusteredGapOverlaps": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "clusteredGapSize": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "clusteredGapOverlapReverse": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "labels": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "properties": {
+                      "showSeries": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "labelPosition": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    },
+                    "selector": {
+                      "metadata": "<string>"
+                    }
+                  }
+                ],
+                "legend": [
+                  {
+                    "properties": {
+                      "showGradientLegend": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "valueAxis": [
+                  {
+                    "properties": {
+                      "showAxisTitle": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "labelDisplayUnits": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "categoryAxis": [
+                  {
+                    "properties": {
+                      "axisType": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "showAxisTitle": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              "vcObjects": {
+                "title": [
+                  {
+                    "properties": {
+                      "text": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "alignment": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "dropShadow": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": "<number>",
+                                "Percent": "<number>"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "preset": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "angle": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "shadowDistance": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "shadowBlur": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "shadowSpread": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "transparency": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "border": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "radius": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": "<number>",
+                                "Percent": "<number>"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "filters": [
+            {
+              "name": "<string>",
+              "expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "<string>"
+                    }
+                  },
+                  "Property": "<string>"
+                }
+              },
+              "filter": {
+                "Version": "<number>",
+                "From": [
+                  {
+                    "Name": "<string>",
+                    "Entity": "<string>",
+                    "Type": "<number>"
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "<string>"
+                                }
+                              },
+                              "Property": "<string>"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "<string>"
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    }
+                  }
+                ]
+              },
+              "type": "<string>",
+              "howCreated": "<number>",
+              "objects": {}
+            }
+          ],
+          "height": "<number>",
+          "width": "<number>",
+          "x": "<number>",
+          "y": "<number>",
+          "z": "<number>"
+        },
+        {
+          "config": {
+            "name": "<string>",
+            "layouts": [
+              {
+                "id": "<number>",
+                "position": {
+                  "x": "<number>",
+                  "y": "<number>",
+                  "z": "<number>",
+                  "width": "<number>",
+                  "height": "<number>",
+                  "tabOrder": "<number>"
+                }
+              }
+            ],
+            "singleVisual": {
+              "visualType": "<string>",
+              "projections": {
+                "Y": [
+                  {
+                    "queryRef": "<string>"
+                  }
+                ],
+                "Category": [
+                  {
+                    "queryRef": "<string>",
+                    "active": "<number>"
+                  }
+                ]
+              },
+              "prototypeQuery": {
+                "Version": "<number>",
+                "From": [
+                  {
+                    "Name": "<string>",
+                    "Entity": "<string>",
+                    "Type": "<number>"
+                  }
+                ],
+                "Select": [
+                  {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "<string>"
+                        }
+                      },
+                      "Property": "<string>"
+                    },
+                    "Name": "<string>",
+                    "NativeReferenceName": "<string>"
+                  },
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "<string>"
+                        }
+                      },
+                      "Property": "<string>"
+                    },
+                    "Name": "<string>",
+                    "NativeReferenceName": "<string>"
+                  }
+                ],
+                "OrderBy": [
+                  {
+                    "Direction": "<number>",
+                    "Expression": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "<string>"
+                          }
+                        },
+                        "Property": "<string>"
+                      }
+                    }
+                  }
+                ]
+              },
+              "drillFilterOtherVisuals": "<number>",
+              "objects": {
+                "layout": [
+                  {
+                    "properties": {
+                      "clusteredGapOverlaps": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "clusteredGapSize": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "clusteredGapOverlapReverse": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "labels": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "properties": {
+                      "showSeries": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "labelPosition": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    },
+                    "selector": {
+                      "metadata": "<string>"
+                    }
+                  }
+                ],
+                "legend": [
+                  {
+                    "properties": {
+                      "showGradientLegend": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "valueAxis": [
+                  {
+                    "properties": {
+                      "showAxisTitle": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "labelDisplayUnits": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "categoryAxis": [
+                  {
+                    "properties": {
+                      "axisType": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "showAxisTitle": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              "vcObjects": {
+                "title": [
+                  {
+                    "properties": {
+                      "text": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "alignment": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "border": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": "<number>",
+                                "Percent": "<number>"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "radius": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "dropShadow": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": "<number>",
+                                "Percent": "<number>"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "preset": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "filters": [
+            {
+              "name": "<string>",
+              "expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "<string>"
+                    }
+                  },
+                  "Property": "<string>"
+                }
+              },
+              "filter": {
+                "Version": "<number>",
+                "From": [
+                  {
+                    "Name": "<string>",
+                    "Entity": "<string>",
+                    "Type": "<number>"
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "<string>"
+                                }
+                              },
+                              "Property": "<string>"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "<string>"
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    }
+                  }
+                ]
+              },
+              "type": "<string>",
+              "howCreated": "<number>",
+              "objects": {}
+            }
+          ],
+          "height": "<number>",
+          "width": "<number>",
+          "x": "<number>",
+          "y": "<number>",
+          "z": "<number>"
+        },
+        {
+          "config": {
+            "name": "<string>",
+            "layouts": [
+              {
+                "id": "<number>",
+                "position": {
+                  "height": "<number>",
+                  "width": "<number>",
+                  "x": "<number>",
+                  "y": "<number>",
+                  "z": "<number>",
+                  "tabOrder": "<number>"
+                }
+              }
+            ],
+            "singleVisual": {
+              "visualType": "<string>",
+              "projections": {
+                "Data": [
+                  {
+                    "queryRef": "<string>"
+                  }
+                ]
+              },
+              "prototypeQuery": {
+                "Version": "<number>",
+                "From": [
+                  {
+                    "Name": "<string>",
+                    "Entity": "<string>",
+                    "Type": "<number>"
+                  }
+                ],
+                "Select": [
+                  {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "<string>"
+                        }
+                      },
+                      "Property": "<string>"
+                    },
+                    "Name": "<string>",
+                    "NativeReferenceName": "<string>"
+                  }
+                ],
+                "OrderBy": [
+                  {
+                    "Direction": "<number>",
+                    "Expression": {
+                      "Measure": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "<string>"
+                          }
+                        },
+                        "Property": "<string>"
+                      }
+                    }
+                  }
+                ]
+              },
+              "drillFilterOtherVisuals": "<number>",
+              "hasDefaultSort": "<number>",
+              "objects": {
+                "label": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "fontSize": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "bold": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "fontColor": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": "<number>",
+                                "Percent": "<number>"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "selector": {
+                      "id": "<string>"
+                    }
+                  }
+                ],
+                "outline": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    },
+                    "selector": {
+                      "id": "<string>"
+                    }
+                  }
+                ],
+                "padding": [
+                  {
+                    "properties": {
+                      "paddingSelection": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    },
+                    "selector": {
+                      "id": "<string>"
+                    }
+                  }
+                ],
+                "fillCustom": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "value": [
+                  {
+                    "properties": {
+                      "fontSize": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    },
+                    "selector": {
+                      "id": "<string>"
+                    }
+                  },
+                  {
+                    "properties": {
+                      "labelDisplayUnits": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    },
+                    "selector": {
+                      "metadata": "<string>"
+                    }
+                  }
+                ]
+              },
+              "vcObjects": {
+                "border": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "radius": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": "<number>",
+                                "Percent": "<number>"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "dropShadow": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "preset": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "angle": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "shadowDistance": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "shadowBlur": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "shadowSpread": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "transparency": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": "<number>",
+                                "Percent": "<number>"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "background": [
+                  {
+                    "properties": {
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": "<number>",
+                                "Percent": "<number>"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "padding": [
+                  {
+                    "properties": {
+                      "top": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "bottom": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            "parentGroupName": "<string>"
+          },
+          "filters": [],
+          "height": "<number>",
+          "width": "<number>",
+          "x": "<number>",
+          "y": "<number>",
+          "z": "<number>"
+        },
+        {
+          "config": {
+            "name": "<string>",
+            "layouts": [
+              {
+                "id": "<number>",
+                "position": {
+                  "height": "<number>",
+                  "width": "<number>",
+                  "x": "<number>",
+                  "y": "<number>",
+                  "z": "<number>",
+                  "tabOrder": "<number>"
+                }
+              }
+            ],
+            "singleVisualGroup": {
+              "displayName": "<string>",
+              "groupMode": "<number>",
+              "objects": {
+                "background": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            "parentGroupName": "<string>"
+          },
+          "height": "<number>",
+          "width": "<number>",
+          "x": "<number>",
+          "y": "<number>",
+          "z": "<number>"
+        },
+        {
+          "config": {
+            "name": "<string>",
+            "layouts": [
+              {
+                "id": "<number>",
+                "position": {
+                  "height": "<number>",
+                  "width": "<number>",
+                  "x": "<number>",
+                  "y": "<number>",
+                  "z": "<number>",
+                  "tabOrder": "<number>"
+                }
+              }
+            ],
+            "singleVisual": {
+              "visualType": "<string>",
+              "projections": {
+                "Y": [
+                  {
+                    "queryRef": "<string>"
+                  }
+                ],
+                "Category": [
+                  {
+                    "queryRef": "<string>",
+                    "active": "<number>"
+                  }
+                ]
+              },
+              "prototypeQuery": {
+                "Version": "<number>",
+                "From": [
+                  {
+                    "Name": "<string>",
+                    "Entity": "<string>",
+                    "Type": "<number>"
+                  }
+                ],
+                "Select": [
+                  {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "<string>"
+                        }
+                      },
+                      "Property": "<string>"
+                    },
+                    "Name": "<string>",
+                    "NativeReferenceName": "<string>"
+                  },
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "<string>"
+                        }
+                      },
+                      "Property": "<string>"
+                    },
+                    "Name": "<string>",
+                    "NativeReferenceName": "<string>"
+                  }
+                ],
+                "OrderBy": [
+                  {
+                    "Direction": "<number>",
+                    "Expression": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "<string>"
+                          }
+                        },
+                        "Property": "<string>"
+                      }
+                    }
+                  }
+                ]
+              },
+              "drillFilterOtherVisuals": "<number>",
+              "objects": {
+                "categoryAxis": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "valueAxis": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "showAxisTitle": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "lineStyles": [
+                  {
+                    "properties": {
+                      "lineChartType": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              "vcObjects": {
+                "title": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "background": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "visualHeader": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            "parentGroupName": "<string>"
+          },
+          "filters": [],
+          "height": "<number>",
+          "width": "<number>",
+          "x": "<number>",
+          "y": "<number>",
+          "z": "<number>"
+        },
+        {
+          "config": {
+            "name": "<string>",
+            "layouts": [
+              {
+                "id": "<number>",
+                "position": {
+                  "x": "<number>",
+                  "y": "<number>",
+                  "z": "<number>",
+                  "width": "<number>",
+                  "height": "<number>",
+                  "tabOrder": "<number>"
+                }
+              }
+            ],
+            "singleVisual": {
+              "visualType": "<string>",
+              "projections": {
+                "Category": [
+                  {
+                    "queryRef": "<string>",
+                    "active": "<number>"
+                  }
+                ],
+                "Y": [
+                  {
+                    "queryRef": "<string>"
+                  }
+                ]
+              },
+              "prototypeQuery": {
+                "Version": "<number>",
+                "From": [
+                  {
+                    "Name": "<string>",
+                    "Entity": "<string>",
+                    "Type": "<number>"
+                  }
+                ],
+                "Select": [
+                  {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "<string>"
+                            }
+                          },
+                          "Hierarchy": "<string>"
+                        }
+                      },
+                      "Level": "<string>"
+                    },
+                    "Name": "<string>",
+                    "NativeReferenceName": "<string>"
+                  },
+                  {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "<string>"
+                        }
+                      },
+                      "Property": "<string>"
+                    },
+                    "Name": "<string>",
+                    "NativeReferenceName": "<string>"
+                  }
+                ],
+                "OrderBy": [
+                  {
+                    "Direction": "<number>",
+                    "Expression": {
+                      "HierarchyLevel": {
+                        "Expression": {
+                          "Hierarchy": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "<string>"
+                              }
+                            },
+                            "Hierarchy": "<string>"
+                          }
+                        },
+                        "Level": "<string>"
+                      }
+                    }
+                  }
+                ]
+              },
+              "drillFilterOtherVisuals": "<number>",
+              "objects": {
+                "categoryAxis": [
+                  {
+                    "properties": {
+                      "showAxisTitle": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "concatenateLabels": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "axisType": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "fontSize": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "valueAxis": [
+                  {
+                    "properties": {
+                      "showAxisTitle": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "labelDisplayUnits": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "fontSize": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "labels": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "layout": [
+                  {
+                    "properties": {}
+                  }
+                ],
+                "legend": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "lineStyles": [
+                  {
+                    "properties": {
+                      "lineChartType": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              "vcObjects": {
+                "title": [
+                  {
+                    "properties": {
+                      "text": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "alignment": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "border": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": "<number>",
+                                "Percent": "<number>"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "radius": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "dropShadow": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": "<number>",
+                                "Percent": "<number>"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "preset": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "filters": [
+            {
+              "name": "<string>",
+              "expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "<string>"
+                    }
+                  },
+                  "Property": "<string>"
+                }
+              },
+              "filter": {
+                "Version": "<number>",
+                "From": [
+                  {
+                    "Name": "<string>",
+                    "Entity": "<string>",
+                    "Type": "<number>"
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "<string>"
+                                }
+                              },
+                              "Property": "<string>"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "<string>"
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    }
+                  }
+                ]
+              },
+              "type": "<string>",
+              "howCreated": "<number>",
+              "objects": {}
+            }
+          ],
+          "height": "<number>",
+          "width": "<number>",
+          "x": "<number>",
+          "y": "<number>",
+          "z": "<number>"
+        },
+        {
+          "config": {
+            "name": "<string>",
+            "layouts": [
+              {
+                "id": "<number>",
+                "position": {
+                  "height": "<number>",
+                  "width": "<number>",
+                  "x": "<number>",
+                  "y": "<number>",
+                  "z": "<number>",
+                  "tabOrder": "<number>"
+                }
+              }
+            ],
+            "singleVisual": {
+              "visualType": "<string>",
+              "projections": {
+                "Data": [
+                  {
+                    "queryRef": "<string>"
+                  }
+                ]
+              },
+              "prototypeQuery": {
+                "Version": "<number>",
+                "From": [
+                  {
+                    "Name": "<string>",
+                    "Entity": "<string>",
+                    "Type": "<number>"
+                  }
+                ],
+                "Select": [
+                  {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "<string>"
+                        }
+                      },
+                      "Property": "<string>"
+                    },
+                    "Name": "<string>",
+                    "NativeReferenceName": "<string>"
+                  }
+                ],
+                "OrderBy": [
+                  {
+                    "Direction": "<number>",
+                    "Expression": {
+                      "Measure": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "<string>"
+                          }
+                        },
+                        "Property": "<string>"
+                      }
+                    }
+                  }
+                ]
+              },
+              "drillFilterOtherVisuals": "<number>",
+              "hasDefaultSort": "<number>",
+              "objects": {
+                "label": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "fontSize": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "bold": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "fontColor": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": "<number>",
+                                "Percent": "<number>"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "selector": {
+                      "id": "<string>"
+                    }
+                  }
+                ],
+                "outline": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    },
+                    "selector": {
+                      "id": "<string>"
+                    }
+                  }
+                ],
+                "padding": [
+                  {
+                    "properties": {
+                      "paddingSelection": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    },
+                    "selector": {
+                      "id": "<string>"
+                    }
+                  }
+                ],
+                "fillCustom": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "value": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "properties": {
+                      "fontSize": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    },
+                    "selector": {
+                      "id": "<string>"
+                    }
+                  },
+                  {
+                    "properties": {
+                      "labelDisplayUnits": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "fontSize": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    },
+                    "selector": {
+                      "metadata": "<string>"
+                    }
+                  }
+                ]
+              },
+              "vcObjects": {
+                "border": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "radius": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": "<number>",
+                                "Percent": "<number>"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "dropShadow": [
+                  {
+                    "properties": {
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "preset": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "angle": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "shadowDistance": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "shadowBlur": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "shadowSpread": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "transparency": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": "<number>",
+                                "Percent": "<number>"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "background": [
+                  {
+                    "properties": {
+                      "color": {
+                        "solid": {
+                          "color": {
+                            "expr": {
+                              "ThemeDataColor": {
+                                "ColorId": "<number>",
+                                "Percent": "<number>"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "show": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "padding": [
+                  {
+                    "properties": {
+                      "top": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      },
+                      "bottom": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            "parentGroupName": "<string>"
+          },
+          "filters": [],
+          "height": "<number>",
+          "width": "<number>",
+          "x": "<number>",
+          "y": "<number>",
+          "z": "<number>"
+        },
+        {
+          "config": {
+            "name": "<string>",
+            "layouts": [
+              {
+                "id": "<number>",
+                "position": {
+                  "x": "<number>",
+                  "y": "<number>",
+                  "z": "<number>",
+                  "width": "<number>",
+                  "height": "<number>",
+                  "tabOrder": "<number>"
+                }
+              }
+            ],
+            "singleVisual": {
+              "visualType": "<string>",
+              "drillFilterOtherVisuals": "<number>",
+              "objects": {
+                "general": [
+                  {
+                    "properties": {
+                      "imageUrl": {
+                        "expr": {
+                          "ResourcePackageItem": {
+                            "PackageName": "<string>",
+                            "PackageType": "<number>",
+                            "ItemName": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ],
+                "imageScaling": [
+                  {
+                    "properties": {
+                      "imageScalingType": {
+                        "expr": {
+                          "Literal": {
+                            "Value": "<string>"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            "howCreated": "<string>"
+          },
+          "filters": [],
+          "height": "<number>",
+          "width": "<number>",
+          "x": "<number>",
+          "y": "<number>",
+          "z": "<number>"
+        }
+      ],
+      "width": "<number>"
+    }
+  ]
+}

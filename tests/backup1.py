@@ -1,268 +1,3 @@
-"""
-Fabric Workspace Analyzer v3 - Complete Dependency Analysis
-============================================================
-
-This script implements the workflow shown in the dependency analysis diagram:
-1. Get Workspaces
-2. Get Datasets and Reports in parallel
-3. Extract metadata from all objects (Tables, Columns, Measures)
-4. Perform enhanced dependency checking
-5. Filter results to identify unused/used objects
-
-Based on the Enhanced_Workspace_Analysis_v2.ipynb and New Workspace Analysis.ipynb
-"""
-
-from numpy import isin
-import pandas as pd
-import sempy_labs
-import sempy.fabric as fabric
-from sempy_labs.report import ReportWrapper
-from pyspark.sql import SparkSession, functions as F
-from pyspark.sql.functions import col
-import re
-import json
-from typing import Dict, List, Set, Any, Optional
-from dataclasses import dataclass
-from datetime import datetime
-import time
-
-# Initialize Spark session
-spark = SparkSession.builder.getOrCreate()
-
-@dataclass
-class DatasetInfo:
-    """Data structure to hold comprehensive dataset information"""
-    ds_id: str
-    ds_name: str
-    ws_id: str
-    ws_name: str
-    dependencies_df: Optional[pd.DataFrame] = None
-    tables_df: Optional[pd.DataFrame] = None
-    relationships_df: Optional[pd.DataFrame] = None
-    measures_df: Optional[pd.DataFrame] = None
-    columns_df: Optional[pd.DataFrame] = None
-
-@dataclass
-class ReportMetadata:
-    """Data structure to hold Power BI report metadata analysis"""
-    report_id: str
-    report_name: str
-    workspace_id: str
-    workspace_name: str
-    dataset_id: str
-    report_format: str
-    extraction_method: str
-    tables: List[str]
-    columns: List[str]
-    measures: List[str]
-    visuals_count: int
-    filters_count: int
-    extraction_success: bool
-    error_message: str = ""
-
-class PowerBIMetadataExtractor:
-    """Extracts columns, tables, and measures from Power BI report metadata"""
-    
-    def __init__(self):
-        self.tables = set()
-        self.columns = set()
-        self.measures = set()
-        self.visual_details = []
-        self.filter_details = []
-        
-    def extract_from_json_data(self, data: Dict[str, Any]) -> Dict[str, Any]:
-        """Extract metadata from JSON data"""
-        self._reset()
-        
-        # Extract from sections
-        sections = data.get('sections', [])
-        
-        for section_idx, section in enumerate(sections):
-            section_name = section.get('displayName', f'Section_{section_idx}')
-            
-            # Extract from section-level filters
-            filters = section.get('filters', [])
-            if isinstance(filters, str):
-                filters = json.loads(filters)
-            self._extract_from_filters(filters, 'section', section_name)
-            
-            # Extract from visual containers
-            visual_containers = section.get('visualContainers', [])
-            self._extract_from_visual_containers(visual_containers, section_name)
-        
-        # Compile results
-        results = {
-            'tables': sorted(list(self.tables)),
-            'columns': sorted(list(self.columns)),
-            'measures': sorted(list(self.measures)),
-            'summary': {
-                'total_tables': len(self.tables),
-                'total_columns': len(self.columns),
-                'total_measures': len(self.measures)
-            },
-            'visual_details': self.visual_details,
-            'filter_details': self.filter_details
-        }
-        
-        return results
-    
-    def _reset(self):
-        """Reset all collections for new extraction"""
-        self.tables.clear()
-        self.columns.clear()
-        self.measures.clear()
-        self.visual_details.clear()
-        self.filter_details.clear()
-    
-    def _extract_from_visual_containers(self, visual_containers: List[Dict], section_name: str):
-        """Extract from visualContainers array"""
-        for visual_idx, visual_container in enumerate(visual_containers):
-            visual_config = visual_container.get('config', {})
-            if isinstance(visual_config, str):
-                visual_config = json.loads(visual_config)
-            visual_name = visual_config.get('name', f'Visual_{visual_idx}')
-            
-            # Extract from visual-level filters
-            filters = visual_container.get('filters', [])
-            if isinstance(filters, str):
-                filters = json.loads(filters)
-            self._extract_from_filters(
-                filters, 
-                'visual', 
-                f"{section_name}->{visual_name}"
-            )
-            
-            # Extract from singleVisual
-            single_visual = visual_config.get('singleVisual', {})
-            if single_visual:
-                self._extract_from_single_visual(single_visual, section_name, visual_name)
-    
-    def _extract_from_single_visual(self, single_visual: Dict, section_name: str, visual_name: str):
-        """Extract from singleVisual object"""
-        visual_type = single_visual.get('visualType', 'unknown')
-        
-        # Extract from projections
-        projections = single_visual.get('projections', {})
-        projection_refs = []
-        
-        for projection_type, projection_list in projections.items():
-            for proj in projection_list:
-                query_ref = proj.get('queryRef', '')
-                if query_ref:
-                    projection_refs.append(query_ref)
-                    self._parse_query_ref(query_ref)
-        
-        # Extract from prototypeQuery
-        prototype_query = single_visual.get('prototypeQuery', {})
-        self._extract_from_prototype_query(prototype_query)
-        
-        # Store visual details
-        self.visual_details.append({
-            'section': section_name,
-            'visual_name': visual_name,
-            'visual_type': visual_type,
-            'projection_refs': projection_refs,
-            'has_prototype_query': bool(prototype_query)
-        })
-    
-    def _extract_from_prototype_query(self, prototype_query: Dict):
-        """Extract from prototypeQuery object"""
-        # Extract tables from 'From' clause
-        from_clause = prototype_query.get('From', [])
-        for from_item in from_clause:
-            entity = from_item.get('Entity', '')
-            if entity:
-                self.tables.add(entity)
-        
-        # Extract columns and measures from 'Select' clause
-        select_clause = prototype_query.get('Select', [])
-        for select_item in select_clause:
-            name = select_item.get('Name', '')
-            
-            # Check if it's a Column
-            if 'Column' in select_item:
-                column_property = select_item['Column'].get('Property', '')
-                if column_property and name:
-                    self.columns.add(name)  # Store full reference (table.column)
-                    # Also extract table name
-                    if '.' in name:
-                        table_name = name.split('.')[0]
-                        self.tables.add(table_name)
-            
-            # Check if it's a Measure
-            elif 'Measure' in select_item:
-                measure_property = select_item['Measure'].get('Property', '')
-                if measure_property and name:
-                    self.measures.add(name)  # Store full reference (table.measure)
-                    # Also extract table name
-                    if '.' in name:
-                        table_name = name.split('.')[0]
-                        self.tables.add(table_name)
-    
-    def _extract_from_filters(self, filters: List[Dict], filter_type: str, context: str):
-        """Extract from filters array"""
-        for filter_idx, filter_obj in enumerate(filters):
-            filter_name = filter_obj.get('name', f'Filter_{filter_idx}')
-            
-            # Extract from expression
-            expression = filter_obj.get('expression', {})
-            self._extract_from_expression(expression)
-            
-            # Extract from filter object (nested structure)
-            filter_def = filter_obj.get('filter', {})
-            if filter_def:
-                # Extract tables from 'From' clause in filter
-                from_clause = filter_def.get('From', [])
-                for from_item in from_clause:
-                    entity = from_item.get('Entity', '')
-                    if entity:
-                        self.tables.add(entity)
-                
-                # Extract from 'Where' clause - might contain column references
-                where_clause = filter_def.get('Where', [])
-                for where_item in where_clause:
-                    self._extract_from_where_condition(where_item)
-            
-            # Store filter details
-            self.filter_details.append({
-                'filter_type': filter_type,
-                'context': context,
-                'filter_name': filter_name,
-                'has_expression': bool(expression),
-                'has_filter_def': bool(filter_def)
-            })
-    
-    def _extract_from_expression(self, expression: Dict):
-        """Extract from expression object"""
-        if 'Column' in expression:
-            # Extract table from SourceRef
-            column_expr = expression['Column']
-            source_ref = column_expr.get('Expression', {}).get('SourceRef', {})
-            entity = source_ref.get('Entity', '')
-            if entity:
-                self.tables.add(entity)
-            
-            # Extract column property
-            property_name = column_expr.get('Property', '')
-            if property_name and entity:
-                self.columns.add(f"{entity}.{property_name}")
-    
-    def _extract_from_where_condition(self, where_item: Dict):
-        """Extract from WHERE condition"""
-        condition = where_item.get('Condition', {})
-        if 'In' in condition:
-            expressions = condition['In'].get('Expressions', [])
-            for expr in expressions:
-                self._extract_from_expression(expr)
-    
-    def _parse_query_ref(self, query_ref: str):
-        """Parse queryRef format (e.g., 'table.column' or 'table.measure')"""
-        if '.' in query_ref:
-            table_name, field_name = query_ref.split('.', 1)
-            self.tables.add(table_name)
-            # We'll determine if it's a column or measure from prototype query
-            # For now, just store the full reference
-
 class FabricWorkspaceAnalyzer:
     """Main analyzer class implementing the complete workflow"""
     
@@ -460,7 +195,7 @@ class FabricWorkspaceAnalyzer:
             workspace_name = report_row.get('workspace_name', '')
             dataset_id = report_row.get('dataset_id', '')
             
-            print(f"  📊 Processing report {idx+1}/{len(self.pbi_reports_df)}: {report_name}")
+            print(f"  📊 Processing report {idx+1}/{len(self.pbi_reports_df)+1}: {report_name}")
             
             # Extract metadata
             report_metadata = self.extract_report_metadata(
@@ -487,8 +222,8 @@ class FabricWorkspaceAnalyzer:
                 
                 # Add column records
                 for column in report_metadata.columns:
-                    table_name = column.split('.')[0] if '.' in column else ''
-                    column_name = column.split('.', 1)[1] if '.' in column else column
+                    table_name = column.split("'")[1]
+                    column_name = column.split("'")[2].strip("[]")
                     self.report_objects_used.append({
                         'report_id': report_id,
                         'report_name': report_name,
@@ -504,8 +239,8 @@ class FabricWorkspaceAnalyzer:
                 
                 # Add measure records
                 for measure in report_metadata.measures:
-                    table_name = measure.split('.')[0] if '.' in measure else ''
-                    measure_name = measure.split('.', 1)[1] if '.' in measure else measure
+                    table_name = measure.split("'")[1]
+                    measure_name = measure.split("'")[2].strip("[]")
                     self.report_objects_used.append({
                         'report_id': report_id,
                         'report_name': report_name,
@@ -519,7 +254,7 @@ class FabricWorkspaceAnalyzer:
                         'extraction_method': report_metadata.extraction_method
                     })
         
-        print(f"  ✅ Processed {len(self.report_metadata_list)} reports, extracted {len(self.report_objects_used)} object references")
+        print(f"  ✅ Processed {len(self.report_metadata_list)+1} reports, extracted {len(self.report_objects_used)} object references")
         return self.report_metadata_list
     
     def check_dependencies(self, all_columns_df, all_tables_df, all_measures_df):
@@ -539,27 +274,78 @@ class FabricWorkspaceAnalyzer:
             used_columns.update(report_objects_df[report_objects_df['object_type'] == 'Column']['full_reference'].tolist())
             used_measures.update(report_objects_df[report_objects_df['object_type'] == 'Measure']['full_reference'].tolist())
         
-        # Also check for dependencies within datasets (measures referencing columns, relationships, etc.)
+        print(f"  📋 Initial objects from reports: {len(used_tables)} tables, {len(used_columns)} columns, {len(used_measures)} measures")
+        
+        # Check for dependencies within datasets (relationships and transitive dependencies)
         for ds_id, dataset_info in self.all_dataset_info.items():
-            # Check relationships
+            # Check relationships - columns used in relationships are required
             if dataset_info.relationships_df is not None and not dataset_info.relationships_df.empty:
                 for _, rel in dataset_info.relationships_df.iterrows():
                     if 'qualified_from' in rel:
                         used_columns.add(rel['qualified_from'])
                     if 'qualified_to' in rel:
                         used_columns.add(rel['qualified_to'])
-            
-            # Check dependencies (measures referencing columns/tables)
-            if dataset_info.dependencies_df is not None and not dataset_info.dependencies_df.empty:
-                for _, dep in dataset_info.dependencies_df.iterrows():
-                    if 'referenced_object_name' in dep:
-                        ref_obj = dep['referenced_object_name']
-                        if '.' in ref_obj:
-                            used_columns.add(ref_obj)
-                        else:
-                            used_tables.add(ref_obj)
         
-        print(f"  ✅ Found dependencies: {len(used_tables)} tables, {len(used_columns)} columns, {len(used_measures)} measures")
+        print(f"  🔗 After adding relationship columns: {len(used_columns)} columns")
+        
+        # Transitive dependency resolution: find what the used objects depend on
+        # Keep iterating until no new dependencies are found
+        iteration = 0
+        max_iterations = 10  # Prevent infinite loops
+        
+        while iteration < max_iterations:
+            iteration += 1
+            initial_tables_count = len(used_tables)
+            initial_columns_count = len(used_columns)
+            initial_measures_count = len(used_measures)
+            
+            print(f"  🔄 Dependency resolution iteration {iteration}...")
+            
+            # Check dependencies for all used objects
+            for ds_id, dataset_info in self.all_dataset_info.items():
+                if dataset_info.dependencies_df is None or dataset_info.dependencies_df.empty:
+                    continue
+                
+                # Iterate through each dependency row
+                for _, dep in dataset_info.dependencies_df.iterrows():
+                    # Get the full_object_name (the object that has the dependency)
+                    full_object_name = dep.get('full_object_name', '')
+                    
+                    # Check if this object is in our used sets
+                    if full_object_name in used_columns or full_object_name in used_measures:
+                        # This object is used, so we need to mark its dependencies as used too
+                        ref_object_type = dep.get('referenced_object_type', '')
+                        referenced_full_object_name = dep.get('referenced_full_object_name', '')
+                        
+                        if ref_object_type == 'Table':
+                            # The used object depends on a table
+                            table_name = dep.get('referenced_table', '')
+                            if table_name:
+                                used_tables.add(table_name)
+                        
+                        elif ref_object_type == 'Column':
+                            # The used object depends on a column
+                            if referenced_full_object_name:
+                                used_columns.add(referenced_full_object_name)
+                        
+                        elif ref_object_type == 'Measure':
+                            # The used object depends on a measure
+                            if referenced_full_object_name:
+                                used_measures.add(referenced_full_object_name)
+            
+            # Check if we found any new dependencies
+            new_tables = len(used_tables) - initial_tables_count
+            new_columns = len(used_columns) - initial_columns_count
+            new_measures = len(used_measures) - initial_measures_count
+            
+            print(f"    ➕ Added: {new_tables} tables, {new_columns} columns, {new_measures} measures")
+            
+            # If no new dependencies were found, we're done
+            if new_tables == 0 and new_columns == 0 and new_measures == 0:
+                print(f"  ✅ Dependency resolution converged after {iteration} iteration(s)")
+                break
+        
+        print(f"  ✅ Final dependencies: {len(used_tables)} tables, {len(used_columns)} columns, {len(used_measures)} measures")
         
         return {
             'used_tables': used_tables,
@@ -603,7 +389,7 @@ class FabricWorkspaceAnalyzer:
         # Filter measures
         if not all_measures_df.empty:
             # Create qualified measure name for comparison
-            all_measures_df['qualified_name'] = all_measures_df['table_name'] + '.' + all_measures_df['name']
+            all_measures_df['qualified_name'] = "'" + all_measures_df['table_name'] + "'[" + all_measures_df['measure_name'] + "]"
             all_measures_df['is_used'] = all_measures_df['qualified_name'].isin(used_measures)
             used_measures_df = all_measures_df[all_measures_df['is_used'] == True].copy()
             unused_measures_df = all_measures_df[all_measures_df['is_used'] == False].copy()
@@ -730,17 +516,25 @@ class FabricWorkspaceAnalyzer:
             report = ReportWrapper(report=report_id, workspace=workspace_id)
             rep_format = report.format
             result.report_format = rep_format
-            print(f" 📑 Report Type: {rep_format}")
+            print(f"  📑 Report Type: {rep_format}")
             if rep_format == "PBIR":
-                # Method 1: Use sempy_labs.list_semantic_model_objects() for PBIR format
+                # Method 1: Use sempy_labs.report.list_all_semantic_model_objects() for PBIR format
                 try:
                     objects = report.list_semantic_model_objects()
                     
                     if objects is not None and not objects.empty:
                         # Process the objects DataFrame
                         tables = objects['Table Name'].unique().tolist()
-                        columns = objects[objects['Object Type'] == 'Column']['Object Name'].unique().tolist()
-                        measures = objects[objects['Object Type'] == 'Measure']['Object Name'].unique().tolist()
+                        columns = (
+                            objects[objects['Object Type'] == 'Column']
+                            .assign(qualified=lambda df: "'" + df['Table Name'].fillna('') + "'[" + df['Object Name'] + "]")['qualified'] #build 'table'[column]
+                            .unique().tolist()
+                        )
+                        measures = (
+                            objects[objects['Object Type'] == 'Measure']
+                            .assign(qualified = lambda df: "'" + df['Table Name'].fillna('') + "'[" + df['Object Name'] + "]")["qualified"] #build 'table'[measure]
+                            .unique().tolist()
+                        )
                         
                         result.tables = tables
                         result.columns = columns
@@ -889,11 +683,3 @@ class FabricWorkspaceAnalyzer:
         print(f"  Unused objects: {len(filtered_results['unused_columns'])} columns, {len(filtered_results['unused_tables'])} tables, {len(filtered_results['unused_measures'])} measures")
         print("\n💾 All results saved to lakehouse tables!")
         print("=" * 80)
-
-def main():
-    """Main function to run the analysis"""
-    analyzer = FabricWorkspaceAnalyzer()
-    analyzer.run_complete_analysis()
-
-if __name__ == "__main__":
-    main()
